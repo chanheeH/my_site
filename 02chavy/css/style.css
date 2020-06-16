@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*reset*/
+      *{margin: 0;padding: 0;box-sizing: border-box;}
+      a:link,a:visited{color: #000;
+                   text-decoration: none;
+                   }
+      li{list-style: none;}
+      .clearfix:after{content:"";display: block;clear: both;}
+
+      div.gnbWrap{background-color:orange;}
+      div.gnbWrap>nav.gnbMenu{width: 980px;margin: 0 auto;}
+      div.gnbWrap>nav.gnbMenu>ul{}
+      div.gnbWrap>nav.gnbMenu>ul{}
+      div.gnbWrap>nav.gnbMenu>ul>li{float:left;}
+      div.gnbWrap>nav.gnbMenu>ul>li>a{}
