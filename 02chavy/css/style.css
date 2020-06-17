@@ -7,9 +7,85 @@
       li{list-style: none;}
       .clearfix:after{content:"";display: block;clear: both;}
 
-      div.gnbWrap{background-color:orange;}
-      div.gnbWrap>nav.gnbMenu{width: 980px;margin: 0 auto;}
-      div.gnbWrap>nav.gnbMenu>ul{}
-      div.gnbWrap>nav.gnbMenu>ul{}
-      div.gnbWrap>nav.gnbMenu>ul>li{float:left;}
-      div.gnbWrap>nav.gnbMenu>ul>li>a{}
+
+
+      /*top menu*/
+      div.gnbWrap{
+        width: 1200px;
+        height: 70px;
+        _background-color: #f00;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: relative;
+      }
+      div.gnbWrap>div.gnbMenu{
+        position: absolute;
+        left:200px;
+        width: 700px;
+      }
+      div.gnbWrap>div.gnbMenu:after{
+        content:"";
+        display: block;
+        clear:both;
+      }
+      div.gnbWrap>div.gnbMenu>li{
+        float:left;
+        width:25%;
+      }
+     div.gnbWrap>div.gnbMenu>li>a{
+        display: block;
+        text-align: center;
+        line-height:45px;
+      }
+      div.gnbWrap>div.gnbMenu>li:first-child>a{
+        text-decoration: underline #aaa;
+      }
+      /*top login*/
+      div.gnbWrap>div.gnbLogin{position: absolute;right:0;top:0;width: 250px;}
+
+      div.gnbWrap>div.gnbLogin:after{
+        content:"";
+        display: block;
+        clear:both;
+      }
+      div.gnbWrap>div.gnbLogin>li{float:left;width: 50%;}
+      div.gnbWrap>div.gnbLogin>li>a{display: block;text-align: center;line-height: 45px}
+      div.gnbWrap>div.gnbLogin>li:nth-child(2){
+        background-color:navy;
+        border-radius: 70px;
+      }
+      div.gnbWrap>div.gnbLogin>li:last-child>a{
+        color:white;
+      }
+      div.gnbWrap img{position: absolute;top:0;}
+      div.gnbWrap>div.gnbMenu>li>a:hover{background-color:#eee;border-radius: 70px;}
+      div.gnbWrap>div.gnbLogin>li>a:hover{background-color: #eee;border-radius: 70px;}
+
+
+      /*img*/
+      .visualWrap{_background-color:skyblue;height:530px;}
+      div.visual{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+      div.visual img{
+        position: absolute;
+        right:0;
+        top: 0;
+      }
+      div.visual .txtWrap{
+        width: 500px;
+        position: absolute;
+        top:100px;left:0;
+        padding-left:15px;
+      }
+      div.visual div.txt1{
+        _background-color: #eee;
+        margin-bottom: 20px
+      }
+      div.visual div.txt1 p{
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .navy{color:navy;}
