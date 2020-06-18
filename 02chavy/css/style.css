@@ -62,30 +62,91 @@
       div.gnbWrap>div.gnbLogin>li>a:hover{background-color: #eee;border-radius: 70px;}
 
 
-      /*img*/
-      .visualWrap{_background-color:skyblue;height:530px;}
-      div.visual{
+      /*img slide*/
+      .visual{}
+      .visual .view{
+        position: relative;
+        height: 580px;
         width: 1200px;
         margin: 0 auto;
+    }
+      .visual .slider li{
+        overflow: hidden;
+    }
+      .visual .slider img.img{
+        position: absolute;
+        left: 550px;
+        top: 60px;
+    }
+      .visual .visualTxt{
+        position: absolute;
+        top:150px;
+        width: 500px;
+    }
+      .visual .visualTxt p:first-child{
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+      .visual .visualTxt p{
+        margin-bottom: 40px;
+        font-size:12px;
+    }
+      .visual .visualTxt a{
+        display: block;
+        width: 140px;
+        height: 40px;
+        background:navy;
+        color: white;
+        border-radius: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+    }
+      .navy{color:navy;}
+      .bx-wrapper{
+       -moz-box-shadow:none;
+       -webkit-box-shadow:none;
+       box-shadow:none;
+       border: 0 none;
+       margin-bottom: 0;
+    }
+      .bx-wrapper .bx-pager{
+       bottom:30px;
+    }
+      .bx-wrapper .bx-prev {
+       left: 250px;
+    }
+      .bx-wrapper .bx-next {
+       right: 250px;
+    }
+    /*Save Money*/
+      .saveM{}
+      .saveM .saveMTxt{
+        height: 180px;
+        width: 1200px;
+        background-color: #f8f9ff;
+        margin: 0 auto;
+      }
+      .saveM .saveMTxt p:first-child{
+        font-size:40px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-top: 20px;
+      }
+      .saveM .saveMTxt p{
+        text-align: center;
+      }
+      /*content*/
+      .conWrap{}
+      .conWrap .content{
+        margin: 0 auto;
+        width: 1200px;
+        height: 500px;
         position: relative;
       }
-      div.visual img{
+      .conWrap .content .guide{
         position: absolute;
-        right:0;
-        top: 0;
-      }
-      div.visual .txtWrap{
+        top:150px;
         width: 500px;
-        position: absolute;
-        top:100px;left:0;
-        padding-left:15px;
       }
-      div.visual div.txt1{
-        _background-color: #eee;
-        margin-bottom: 20px
-      }
-      div.visual div.txt1 p{
-        font-size: 50px;
-        font-weight: bold;
-      }
-      .navy{color:navy;}

@@ -3,10 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>chavy</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
 </head>
 <body>
 	<div class="gnbWrap clearfix">
@@ -22,18 +27,56 @@
 				<li><a href="#">Register</a></li>
 		</div>
 	</div>
-	<div class="visualWrap">
-		<div class="visual" >
-			<img src="images/img1.png" alt="">
-			<div class="txtWrap">
-				<div class="txt1">
-					<p>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></p>
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<p>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></p>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
 				</div>
-				<div class="txt2">
-					<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<p>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></p>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
 				</div>
-			</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<p>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></p>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="saveM">
+		<div class="saveMTxt">
+			<p>Save money & <span class="navy">money will save you.</span></p>
+			<p>I will tell you how to become a rich. CLose the doors. Be fearful<br>when others are greedy.</p>
 		</div>
+	</div>
+	<div class="conWrap">
+		<ul class="content">
+			<li>
+				<div class="guide">
+					<p>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></p>
+					<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+					<a href="#" class="btnA">Request Demo</a>
+				</div>
+			</li>
+		</ul>
 	</div>
 </body>
 </html>
