@@ -117,6 +117,7 @@
         background-color: #f8f9ff;
         margin: 0 auto;
       }
+      .saveM .full{width: 1200px;margin: 0 auto;}
       .saveM .saveMTxt p:first-child{
         font-size:40px;
         font-weight: bold;
