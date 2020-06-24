@@ -193,7 +193,7 @@
       .visualTwo{
         background-color: #f8f9ff;
         position: relative;
-        height: 560px;
+        height: 500px;
         margin: 0 auto;
       }
       .visualTwo .viewTwo{
@@ -205,14 +205,14 @@
 
      .visualTwo .viewTwo img.img2{
         position: absolute;
-        left: 900px;
-        height: 420px;
+        left: 50%;
+        width: 950px;
+        height: 500px;
     }
       .visualTwo .visualTxtTwo{
         position: absolute;
-        top:100px;
+        top:150px;
         width: 500px;
-        left:360px;
     }
       .visualTwo .visualTxtTwo p:first-child{
         font-size: 30px;
@@ -237,14 +237,22 @@
     }
 
     /* solution */
-    .solution{height: 400px;}
-    .solution p{
-      text-align: center;
+    .solution{}
+    .solution .solutionTxt{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 70px 0;
+    }
+    .solution .solutionTxt p{
       font-size: 30px;
       font-weight: bold;
-      line-height: 200px;
     }
-    .solutionA{width: 290px;margin: auto;}
+    .solutionA{
+      width: 290px;
+      margin: auto;
+      padding-top: 70px;
+    }
     .solution a{
         display: block;
         width: 140px;
@@ -262,60 +270,70 @@
     }
 
     /*question*/
-    .question{margin: 0 auto;height: 250px;}
-    .question p{
+    .question{}
+    .questionTxt{
+      margin: 0 auto;
+      width: 1200px;
       text-align: center;
+    }
+    .question p{
       font-size: 14px
     }
     .question p:first-child{
       font-size:30px;
       font-weight: bold;
-      line-height: 125px;
+      margin-bottom: 30px;
     }
 
     /*number*/
-    .numberWrap{position: relative;}
-    .number{width: 900px;position: absolute;left: 450px}
-    .number .boxWrapTwo{}
-    .number .boxWrapTwo li{
-      background:white;
-      width: 1000px;
+    .numberWrap{padding: 150px 0;}
+    .number{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .number li{
+      width: 800px;
       height: 100px;
       border: 1px solid #eee;
-      border-radius: 100px;
-      margin-bottom: 50px;
+      border-radius: 50px;
       box-shadow: 0px 0px 20px #eee;
+      margin: 0 auto;
+      margin-bottom: 40px;
     }
-    .number .boxWrapTwo li p{
+    .number li p{
       line-height: 100px;
-      padding-left: 100px;
       font-weight: bold;
+      margin-left: 40px;
     }
-    .number .boxWrapTwo img{
-      position: absolute;
-      right:0px;
-      top:20px;
+    .number img{
+      float: right;
+      margin-right: 40px;
+      padding-top: 15px;
     }
 
     /*visual3*/
-    .visualThree{
-        height: 420px;
+      .visualThree{
+        position: relative;
+        height: 500px;
+        margin: 0 auto;
       }
       .visualThree .viewThree{
         position: relative;
         height: 580px;
         margin: 0 auto;
+        width: 1200px;
     }
+
      .visualThree .viewThree img.img3{
         position: absolute;
-        left: 900px;
-        height: 420px;
+        left: 50%;
+        width: 700px;
+        height: 500px;
     }
       .visualThree .visualTxtThree{
         position: absolute;
-        top:100px;
+        top:150px;
         width: 500px;
-        left:360px;
     }
       .visualThree .visualTxtThree p:first-child{
         font-size: 30px;
@@ -338,6 +356,28 @@
         font-size: 14px;
         box-shadow: 5px 5px #eee;
     }
+    /*footer*/
+      .footerWrap{
+        background-color: #f8f9ff;
+      }
+      .footerWrap .footer{
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .footerWrap .footer .logo{
+        width: 200px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 150px
+      }
+      .footerWrap .footer .Txt{
+        float:left;
+      }
+      .footerWrap .footer p{
+        padding-top: 30px;
+        text-align: left;
+      }
+
 
 
 
