@@ -6,42 +6,146 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
-	<style></style>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".vSlider").bxSlider({pager:false});
+			$(".bSlider").bxSlider({pager:false});
+		}); 
+	</script>
 </head>
 <body>
-	<header id="header">
-		<div class="topMenu clearfix">
-			<div class="left clearfix">
-				<p>대학교</p>
-				<p>입학안내</p>
-				<p>대학원</p>
+	<header id="header_wrap">
+		<div class="utilMenuWrap">
+			<nav class="util_menu clearfix">
+				<ul class="left clearfix">
+					<li><a href="#" class="active">대학교</a></li>
+					<li><a href="#">입학안내</a></li>
+					<li><a href="#">대학원</a></li>
+				</ul>
+				<ul class="right clearfix">
+					<li>글자크기</li>
+					<li class="btn_mp clearfix">
+						<a href="#">-</a>
+						<a href="#">+</a>
+					</li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</nav> <!-- util_menu -->
+		</div> <!-- utilMenuWrap -->
+		<nav class="main_gnb clearfix">
+			<h1 class="logo"><a href="#">한국대학교</a></h1>
+			<div class="navWrap clearfix">
+				<ul class="nav clearfix">
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">학과소개</a></li>
+					<li><a href="#">학사안내</a></li>
+					<li><a href="#">대학생활</a></li>
+					<li><a href="#">학생지원센터</a></li>
+				</ul>
+				<div class="btnToggle">
+					<a href="#" class="toggle">toggle</a>
+					<a href="#" class="my">my</a>
+				</div>
 			</div>
-			<div class="middle">
-				<p>글자크기</p>
-				<img src="images/minus.png" alt="">
-			</div>
-			<div class="right">
-				<P>찾아오시는길</P>
-				<p>ENGLISH</p>
-				<p>사이트맵</p>
-			</div>
-		</div>
-	</header>
-	<header id="headerTwo">
-		
+		</nav>
 	</header>
 	<div id="contents">
-		<section class="title"></section>
+		<section class="title clearfix">
+			<ul class="leftTxt">
+				<li><p>함께 나누며 세상을 이끌어</p></li>
+				<li><p>세계로향하는 한국대학교</p></li>
+			</ul>
+			<ul class="rightTxt">
+				<li>
+					<a href="#">
+						<img src="images/icon1.png" alt=""><p>입학절차안내</p></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon2.png" alt="">
+						<p>입학설명회</p></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon3.png" alt="">
+						<p>장학제도</p></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon4.png" alt="">
+						<p>증명서발급</p></a>
+				</li>
+			</ul>
+		</section>
 		<div class="container">
-			<ul class="clearfix">
-				<li>01</li>
-				<li>02</li>
-				<li>03</li>
+			<ul  class="clearfix">
+				<li>
+					<ul class="vSlider">
+						<li class="viewSlider">
+							<img src="images/box1_01.jpg" alt="">
+							<div class="sliderTxt">
+								<p><strong>한국</strong>에서<br><strong>시작</strong>하는<br>새로운<strong>꿈</strong></p>
+								<a href="#">자세히보기</a>
+							</div>
+						</li>
+						<li class="viewSlider">
+							<img src="images/box1_01.jpg" alt="">
+							<div class="sliderTxt">
+								<p><strong>한국</strong>에서<br><strong>시작</strong>하는<br>새로운<strong>꿈</strong></p>
+								<a href="#">자세히보기</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="mobileWrap">
+					<img src="images/mobile.png" alt="">
+					<div class="mobileTxt">
+						<p><strong>APP</strong>으로<br><strong>스마트도서관</strong><br>바로이용하자!</p>
+						<p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p>
+						<a href="#">자세히보기</a>
+					</div>
+				</li>
+				<li>
+					<ul class="hotLink">
+							<h3>HOT LINK</h3>
+						<li>
+							<a href="#">
+							<img src="images/icon1.png" alt=""><p>국제교류<br>센터</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+							<img src="images/icon1.png" alt=""><p>원격지원<br>시스템</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+							<img src="images/icon1.png" alt=""><p>예산/결산<br>공고</p>
+							</a>
+						</li>
+					</ul>
+				</li>
 				<li>04</li>
 				<li>05</li>
 				<li>06</li>
 				<li>07</li>
-				<li>08</li>
+				<li class="sliderTwo">
+					<div class="bSlider">
+						<div class="viewSliderTwo">
+							<img src="images/banner01_01.png" alt="">
+							<div class="sliderTxtTwo">
+								<p>2017년 신'편입생 2차 모집<br></p>
+								<p>2017.7.1~2017.7.10</p>
+								<a href="#">입학사전예약</a>
+							</div>
+						</div>
+						<div><img src="images/banner01_01.png" alt=""></div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
