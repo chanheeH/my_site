@@ -296,7 +296,120 @@ div#contents{
     color: white;
     opacity: 0.9;
   }
+
+/*contents Bottom*/
+.conB{
+  width: 1200px;
+  height: 50px;
+  _background: #fff;
+  margin-top: 20px;
+  position: relative;
+}
+.conBL{
+  width: 300px;
+  position: absolute;
+  background: #fff;
+  left: 0;
+  border-right: 1px solid #000;
+}
+.conB>.conBL{}
+.conB>.conBL>ul>li{
+  float: left;
+  width: 140px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  font-weight: bold;
+}
+.conB>.conBR{
+  width: 900px;
+  position: absolute;
+  left: 300px;
+  background: #fff;
+}
+.conB>.conBR>ul>li{
+  float: left;
+  text-align: center;
+  width: 320px;
+  line-height: 50px;
+  display: block;
+}
+.conB>.conBR>ul>li:nth-child(2){
+  font-size: 14px;
+  width: 510px;
+}
+.conB>a>img{
+  position: absolute;
+  height: 50px;
+  right: 0;
+}
+
+
+
+
+
   /*footer*/
-  footer#footer{
-    height: 200px;
+  footer#footerWrap{
+    height: 160px;
+  }
+  footer#footerWrap .footer{
+   width: 1200px;
+   margin: 0 auto;    position: relative;
+  }
+  footer#footerWrap .footer .footerT{
+
+    margin: 0 auto;
+    width: 900px;
+    _background: #ff0;
+    float: right;
+    margin-bottom: 15px
+    padding-left: 0;
+  }
+  footer#footerWrap .footer .footerT li{
+    float: left;
+    text-align:left;
+    width: 110px;
+    font-size: 14px; 
+    position: relative;
+    padding-top: 20px;
+  }
+  footer#footerWrap .footer .footerT li.korUni:after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color:black;
+    position: absolute;
+    top:22px;
+    left:-30px;
+  }
+  footer#footerWrap .footer .footerTR li{
+    width: 150px;
+  }
+  footer#footerWrap .footer .footerTR li:nth-child(2){
+    width: 95px;
+  }
+  footer#footerWrap .footer .footerTR li:nth-child(3){
+    width: 175px;
+  }
+  footer#footerWrap .footer .footerT .footerTR li:after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color:black;
+    position: absolute;
+    top:22px;
+    left:-3px;
+  }
+  footer#footerWrap .footer .footerM{
+    font-size: 13px;
+    color:gray;
+    padding-bottom: 10px;
+  }
+  footer#footerWrap .footer .footerM p{
+    padding-bottom: 5px;
+  }
+  footer#footerWrap .footer .footerB{
+    font-size: 13px
   }
