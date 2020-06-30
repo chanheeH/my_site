@@ -267,6 +267,9 @@ div#contents{
 .inform li.informTxt p{
   padding: 8px 0px;
 }
+.inform li.informTxt a{
+  color: white;
+}
 .inform li.informDate{
   float: right;
   padding-top: 20px;
@@ -275,6 +278,9 @@ div#contents{
 .inform li.informDate p{
   padding: 8px 0px;
   padding-right: 10px;
+}
+.inform li.informDate a{
+  color:white;
 }
 /*box5*/
 .news li{}
@@ -317,6 +323,8 @@ div#contents{
   width: 300px;
   bottom: 0;
   opacity:0.7;
+}
+.tour li.campus a{
   color:white;
   text-align: center;
   line-height: 45px;
