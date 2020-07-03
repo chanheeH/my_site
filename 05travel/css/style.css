@@ -6,8 +6,8 @@
 /*header*/
 .headerWrap{}
 .header{
-	background-color: #0b70a6;
-	background-image: url(../images/plane.jpg);
+	background-color: #086ca7;
+	background-image: url(../images/plane.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	
@@ -84,6 +84,10 @@
 	height: 30px;
 }
 .menuWrap{}
+.menugnb{
+	width: 100%;
+	border-bottom: 8px solid #086ca7;
+}
 .menu{
 	width: 1200px;
 	margin: 0 auto;
@@ -91,14 +95,50 @@
 .menu>ul{}
 .menu>ul>li{
 	float: left;
-	width: 200px;
-	height: 50px;
-	text-align: center;
-	border-right: 1px solid #eee;
 	line-height: 50px;
 	font-weight: bold;
-	_box-shadow: 0 10px 0 #0f73a7;
+	width: 200px;
+	border-right: 1px solid #eee;
+	text-align: center;
+	line-height: 50px;
+}
+.menu>ul>li>a{
+	display: block;
 }
 .menu>ul>li:first-child{
 	border-left: 1px solid #eee;
 }
+
+/*content*/
+.content{
+	height: 1250px;
+	background-image: url(../images/00bg_dot.gif), url(../images/bg.jpg);
+	background-repeat: repeat, no-repeat;
+ 	background-position: center;
+  	background-size:auto, cover;
+}
+.content .containerOne{
+	width: 1200px;
+	margin: 0 auto;
+}
+.content .containerOne .section .reservation{}
+.content .containerOne .section .reservation li{}
+.content .containerOne .section .travelGo{}
+.content .containerOne .section .travelGo{}
+
+.content .containerTwo{
+	width: 1200px;
+	margin: 0 auto;
+}
+.content .containerTwo>ul{}
+.content .containerTwo>ul>li{}
+.content .containerTwo>ul>li:nth-child(1){}
+.content .containerTwo>ul>li:nth-child(2){}
+.content .containerTwo>ul>li:nth-child(3){}
+.content .containerTwo>ul>li:nth-child(4){}
+.content .containerTwo>ul>li:nth-child(5){}
+.content .containerTwo>ul>li:nth-child(6){}
+.content .containerTwo>ul>li:nth-child(7){}
+.content .containerTwo>ul>li:nth-child(8){}
+.content .containerTwo>ul>li:nth-child(9){}
+.content .containerTwo>ul>li:nth-child(10){}
