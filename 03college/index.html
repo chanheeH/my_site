@@ -5,14 +5,23 @@
 	<title>college</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$(".vSlider").bxSlider({pager:false});
 			$(".bSlider").bxSlider({pager:false});
-		}); 
+		});
+		 $(document).ready(function(){
+		 	$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:300,
+				innerHeight:160
+			});
+		});
 	</script>
 </head>
 <body>
@@ -174,7 +183,7 @@
 					</ul>
 				</li>
 				<li>
-					<img src="images/img04.jpg" alt="">
+					<a href="https://www.youtube.com/embed/iI48mJ1Vl8Q" class="youtube"><img src="images/img04.jpg" alt=""></a>
 				</li>
 				<li class="sliderTwo">
 					<div class="bSlider">
