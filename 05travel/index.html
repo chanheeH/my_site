@@ -4,7 +4,16 @@
 	<meta charset="UTF-8">
 	<title>travel</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".boxThree").bxSlider({pager:false,});
+			$(".boxFour").bxSlider({pager:false});
+		});
+	</script>
 </head>
 <body>
 	<header class="headerWrap">
@@ -68,23 +77,112 @@
 			<ul class="clearfix">
 				<li>
 					<img src="images/travel01.jpg" alt="">
-					<a href="#">
-						<p>프랑스</p>
-						<p>\1,900,000~</p>
-						<p>></p>
-					</a>
+					<div class="boxOne">
+						<a href="#" class="clearfix">
+							<p>프랑스</p>
+							<p>\1,900,000~</p>
+							<p>></p>
+						</a>
+					</div>
 				</li>
-				<li>4</li>
+				<li>
+					<img src="images/travel02.jpg" alt="">
+					<div class="boxTwo">
+						<a href="#" class="clearfix">
+							<p>일본</p>
+							<p>\890,000~</p>
+							<p>></p>
+						</a>
+					</div>
+				</li>
 			</ul>
 		</div>
 		<div class="containerThree">
 			<img src="images/content2.png" alt="" class="img01">
 			<ul class="clearfix">
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
+				<li>
+					<ul class="boxThree">
+						<li class="boxThreeSlider">
+							<img src="images/travel03.jpg" alt="">
+							<div class="boxThreeTxt">
+								<a href="#"><p>HILLTON HOTEL (PARIS) <span class="star1">★★★</span>★★</p></a>
+							</div>
+						</li>
+						<li class="boxThreeSlider">
+							<img src="images/travel03.jpg" alt="">
+							<div class="boxThreeTxt">
+								<a href="#"><p>HILLTON HOTEL (PARIS) <span class="star1">★★★</span>★★</p></a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="boxFour">
+						<li class="boxFourSlider">
+							<img src="images/travel04.jpg" alt="">
+							<div class="boxFourTxt">
+								<a href="#"><p>관광명소(디즈니랜드) <span class="star1">★★★</span>★★</p></a>
+							</div>
+						</li>
+						<li class="boxFourSlider">
+							<img src="images/travel04.jpg" alt="">
+							<div class="boxFourTxt">
+								<a href="#"><p>관광명소(디즈니랜드) <span class="star1">★★★</span>★★</p></a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="boxFive">
+						<li>
+							<img src="images/travel05.jpg" alt="">
+							<div class="boxFiveTxtTop">
+								<p>TOKYO</p>
+							</div>
+							<div class="boxFiveTxtBottom">
+								<a href="#">
+									<p>20ºC 구름조금</p>
+									<p>습도 60% 바람 남남동 2m/s</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="boxSix">
+						<li>
+							<img src="images/travel06.jpg" alt="">
+							<div class="boxSixTxtTop">
+								<p>"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+							</div>
+							<div class="boxSixTxtMid">
+								<p>프랑스 파리 자유여행 <span class="star1">★★★</span><span class="star2">★★</span></p>
+							</div>
+							<div class="boxSixTxtBottom">
+								<a href="#">
+									<p>facebook 여행후기</p>
+									<p>(임정희님)</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="boxSeven">
+						<li>
+							<img src="images/travel07.jpg" alt="">
+							<div class="boxSevenTxt">
+								<p>여행정보</p>
+								<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							</div>
+							<div class="boxSevenBar">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</div>
+							<div class="bg"></div>
+						</li>
+					</ul>
+				</li>
 				<li>10</li>
 				<li>11</li>
 				<li>12</li>
