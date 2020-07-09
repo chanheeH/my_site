@@ -24,12 +24,6 @@
 						<a href="#"><img src="images/logo.png" alt=""></a>
 					</div>
 					<div class="searchWrap">
-						<<!-- div class="search">
-							<li>SEARCH</li>
-							<label for="searching" class="blind">검색어를 입력하세요.</label>
-							<input type="text" id="searching" name="searching" class="inp-field" placeholder="검색어를 입력하세요.">
-							<img src="images/searching.png" alt="">
-						</div> -->
 						<div class="wrap">
 							<form action="#" method="get">
 								<label for="searchTxt" class="searchTitle">searchtitle</label>
@@ -68,8 +62,33 @@
 		<div class="containerOne">
 			<section class="section">
 				<ul class="clearfix">
-					<li>1</li>
-					<li>2</li>
+					<li class="booking">
+								<ul class="bookingMenu">
+									<li>
+										<label for="airport-reservation">공항예약</label>
+										<input type="radio" id="airport-reservation" name="airport-re">
+									</li>
+										
+									<li>
+										<label for="hotel-reservation">호텔예약</label>
+										<input type="radio" id="hotel-reservation" name="hotel-re">
+									</li>
+									
+									<li>
+										<label for="rentcar">렌트카</label>
+										<input type="radio" id="rentcar" name="rent-car-re">
+									</li>
+									
+									<li>
+										<label for="vacation-spot">휴양지</label>
+										<input type="radio" id="vacation-spot" name="vacation-spot-re">
+									</li>
+								</ul>
+					</li>
+					<li class="Txt">
+						<h2>TRAVEL <span class="underline">GO</span></h2>
+						<P>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자<span class="italic">!</span></P>
+					</li>
 				</ul>
 			</section>
 		</div>
@@ -235,26 +254,23 @@
 					</ul>
 				</li>
 			</ul>
+	</div>
 	<footer class="footerWrap">
 		<div class="footer">
-			<ul class="clearfix">
-				<li>
-					<p>이용약관</p>
-					<p>개인정보취급방침</p>
-					<p>사이트맵</p>
-					<p>고객센터</p>
-					<p>광고 및 제휴문의</p>
-				</li>
-				<li>
-					<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 : 홍길동 대표번호 : 02-1234-5678</p>
-				</li>
-				<li>
-					<p>COPYRIGHTSⓒ2014 HIMEDIA TOUR ALL RIGHTS RESERVED.</p>
-				</li>
-			</ul>
+			<div class="footerTop clearfix">
+				<a href="#"><p>이용약관</p></a>
+				<a href="#"><p>개인정보취급방침</p></a>
+				<a href="#"><p>사이트맵</p></a>
+				<a href="#"><p>고객센터</p></a>
+				<a href="#"><p>광고 및 제휴문의</p></a>
+			</div>
+			<div class="footerMid">
+				<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 : 홍길동 대표번호 : 02-1234-5678</p>
+			</div>
+			<div class="footerBottom">
+				<p>COPYRIGHTSⓒ2014 HIMEDIA TOUR ALL RIGHTS RESERVED.</p>
+			</div>
 		</div>
 	</footer>
-		</div>
-	</div>
 </body>
 </html>
