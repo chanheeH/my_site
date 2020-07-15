@@ -10,8 +10,8 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".boxThree").bxSlider({pager:false,});
-			$(".boxFour").bxSlider({pager:false});
+			$(".boxThree").bxSlider({pager:false,auto:true});
+			$(".boxFour").bxSlider({pager:false,auto:true});
 		});
 	</script>
 </head>
@@ -47,87 +47,116 @@
 		<div class="menugnb">
 			<div class="menu">
 				<ul class="clearfix">
-					<li><a href="#">여행도시</a></li>
-					<li><a href="#">호텔예약</a></li>
-					<li><a href="#">렌트카</a></li>
-					<li><a href="#">여행TIP</a></li>
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">여행도시</a>
+						<ul class="smenu clearfix">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">호텔예약</a>
+						<ul class="smenu">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">렌트카</a>
+						<ul class="smenu">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">여행TIP</a>
+						<ul class="smenu">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">회사소개</a>
+						<ul class="smenu">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">커뮤니티</a>
+						<ul class="smenu">
+							<li><a href="#">smenu1</a></li>
+							<li><a href="#">smenu2</a></li>
+							<li><a href="#">smenu3</a></li>
+							<li><a href="#">smenu4</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div> <!-- menu -->
 		</div> <!-- menugnb -->
 	</div> <!-- menuWrap -->
 	<div class="content">
 		<img src="images/balloon.png" alt="" class="img01">
-		<div class="containerOne">
-			<section class="section">
-				<ul class="clearfix">
-					<li class="booking">
-								<ul class="bookingMenu clearfix">
-									<li>
-										<label for="airport-reservation">공항예약</label>
-										<input type="radio" id="airport-reservation" name="airport-re" class="re" checked>
-										<div class="bookingScreen">
-											<form action=""# method="get" class="formLayer clearfix">
-												<label for="golo">가고 싶은 나라를 선택하세요.</label>
-												<select name="nara" id="golo">
-													<option value="">선택하세요</option>
-													<option value="미국">미국</option>
-													<option value="중국">중국</option>
-													<option value="일본">일본</option>
-													<option value="프랑스">프랑스</option>
-													<option value="스위스">스위스</option>
-												</select>
-												<div class="left">
-													<label for="sdate">출발일</label>
-													<input type="date" id="sdate">
-												</div>
-												<div class="right">
-													<label for="edate">도착일</label>
-													<input type="date" id="edate">
-												</div>
-												<div class="leftT">
-													<label for="seat">좌석등급</label>
-													<select name="seat" id="seat">
-														<option value="비지니스">비지니스</option>
-														<option value="이코노미">이코노미</option>
-													</select>
-												</div>
-												<div class="mid">
-													<label for="adult">성인</label>
-													<input type="number" id="adult">
-												</div>
-												<div class="rightT">
-													<label for="child">아이</label>
-													<input type="number" id="child">
-												</div>
-												<button type="submit" class="tBtn">검색하기</button>
-											</form>
-										</div>
-									</li>
-										
-									<li>
-										<label for="hotel-reservation" class="reserv">호텔예약</label>
-										<input type="radio" id="hotel-reservation" name="hotel-re" class="re">
-									</li>
-									
-									<li>
-										<label for="rentcar" class="reserv">렌트카</label>
-										<input type="radio" id="rentcar" name="rent-car-re" class="re">
-									</li>
-									
-									<li>
-										<label for="vacation-spot" class="reserv">휴양지</label>
-										<input type="radio" id="vacation-spot" name="vacation-spot-re" class="re">
-									</li>
-								</ul>
-					</li>
+     	<div class="containerOne">
+        	<section class="section">
+            	<ul class="clearfix">
+               		<li>
+               			<div class="radio">
+                 			<aside>
+                    			<input type="radio" name="tab" id="one" class="One" checked="checked">
+                    			<input type="radio" name="tab" id="two" class="Two">
+                    			<input type="radio" name="tab" id="three" class="Three">
+                    			<input type="radio" name="tab" id="four" class="Four">
+                   				<div class="label">
+                      				<label for="one"><img src="" alt="">공항예약</label>
+                      				<label for="two"><img src="" alt="">호텔예약</label>
+                      				<label for="three"><img src="" alt="">렌트카</label>
+                      				<label for="four"><img src="" alt="">휴양지</label>
+                  				</div> <!-- label -->
+                 			</aside>    
+              			</div> <!-- radio -->
+                  		<div class="inPut">
+               				<label for="golo" class="lGolo">가고싶은 나라를 선택하세요</label>
+               				<select name="nara" id="golo">
+               					<option value="">선택하세요</option>
+               					<option value="미국">미국</option>
+               					<option value="일본">일본</option>
+               					<option value="중국">중국</option>
+               				</select>
+               				<div class="left">
+                  				<label for="sdate">출발일</label>
+                 				<input type="date" id="sdate">
+               				</div>
+               				<div class="right">
+                  				<label for="edate">도착일</label>
+                  				<input type="date" id="edate">
+               				</div>
+               				<div class="seat">
+                  				<label for="cgrade">좌석등급</label>
+                  				<select name="cgrade" id="cgrade">
+                  					<option value="비지니스">비지니스</option>
+                  					<option value="이코노미">이코노미</option>
+                  				</select>
+                  				<div class="sNum">
+                    				<label for="snum" class="snumO">성인</label>
+                     				<input type="number" id="snum">
+                     				<label for="cnum" class="cnumO">아이</label>
+                     				<input type="number" id="cnum">
+                  				</div>
+               				</div> <!-- seat -->
+               				<button type="submit" class="tBtn">검색하기</button>
+            			<!-- </div> input   -->
+               		</li>
+            	</ul>
+         </section>      
 					<li class="Txt">
 						<h2>TRAVEL <span class="underline">GO</span></h2>
 						<P>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자<span class="italic">!</span></P>
 					</li>
-				</ul>
-			</section>
 		</div>
 		<div class="containerTwo">
 			<ul class="clearfix">
@@ -214,9 +243,7 @@
 								<p>프랑스 파리 자유여행 <span class="star1">★★★</span><span class="star2">★★</span></p>
 							</div>
 							<div class="boxSixTxtBottom">
-								<a href="#">
-									<p>facebook 여행후기</p>
-									<p>(임정희님)</p>
+								<a href="#">facebook 여행후기<br>(임정희님)
 								</a>
 							</div>
 						</li>

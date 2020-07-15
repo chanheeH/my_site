@@ -112,6 +112,11 @@
 .menu{
 	width: 980px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.menu>ul{
+	position: relative;
 }
 .menu>ul>li{
 	float: left;
@@ -128,7 +133,29 @@
 .menu>ul>li:first-child{
 	border-left: 1px solid #eee;
 }
-
+.smenu{
+	position: absolute;
+	left: 0;
+	display: none;
+	background:#086ca7;
+	width: 100%;
+}
+.smenu>li{
+	float: left;
+}
+.smenu>li>a{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	width: 245px;
+	color:white;
+}
+.menu>ul>li:hover{background:#086ca7;}
+.menu>ul>li:hover a{color:white;}
+.menu>ul>li:hover .smenu{
+	display: block;
+}
+.smenu>li:hover {background:lightgray}
 
 
 /*content*/
@@ -140,8 +167,6 @@
   	background-size:auto, cover;
   	position: relative;
 }
-
-
 .img01{
 	width: 800px;
 	position: absolute;
@@ -154,124 +179,176 @@
 	_animation-timing-function: linear; /*일직선. (안버벅거림)*/
 	animation-timing-function: ease-in-out;
 	z-index: 0;
-}
+} /*z-index는 position 있어야 사용 가능*/
 
 /*container1*/
+.content{
+   height: 1310px;
+   background-image: url(../images/dg.png), url(../images/main_bg.png);
+   background-repeat: repeat, no-repeat;
+   background-position: center;
+   background-size:auto, cover;
+   position: relative;
+}
 .content .containerOne{
-	width: 980px;
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
-} /*z-index 사용 시 position 사용 해야 함*/
-.content .containerOne .section>ul>li{
-	float: left;
+   width: 980px;
+   margin: 0 auto;
+}
+.inPut{
+	width: 352px;
 	height: 300px;
-	margin-bottom: 20px;
-	margin-top: 50px;
-	margin-right: 20px;
+	background:white;
+	_position: absolute;
+	top:50px;
+    left:505px;
+    z-index:2;
+    float: right;
 }
-
-
-
-/*reservation*/
-.bookingMenu{
-	width: 100%;
-	height: 300px;
-}
-.bookingMenu .re{
-	display: none;
-}
-.bookingMenu>li{
-	width: 30%;
-}
-.bookingScreen{
-	width: 70%;
-	float: right;
-	margin-right: 20px;
+.inPut label{
 	display: block;
-}
-.airport-reservation{
-	width: 300px;
-}
-.formLayer{
-	width: 300px;
-	margin: 0 auto;
-}
-.formLayer label{
-	display: block;
-	padding-left: 2px;
+	padding-top: 10px;
 	padding-bottom: 5px;
-	padding-top: 20px;
+	padding-left: 3px;
 }
-.formLayer select{
-	width: 100%;
-	height: 30px;
-	font-size: 0.9em;
-	text-indent: 5px;
-	border-radius: 7px;
+.inPut label.lGolo{
+	padding: 15px 25px 5px;
 }
-.formLayer .left,
-.formLayer .right{
+.inPut select{
+	width: 300px;
+	height: 35px;
+	font-size:14px;
+	text-indent:10px;
+  	border-radius:10px;
+  	margin-left:15px;
+  }
+.inPut #golo{
+	margin-left: 23px;
+	width: 88.5%
+}
+.inPut #cgrade{
+	width: 120px;
+	margin-left: 3px;
+}   
+.inPut .left,
+.inPut .right{
+	float:left;
+	width: 150px;
+	margin-left: 23px;
+}
+.inPut .right{
+	margin-left: 12px;
+}
+.inPut .left input,
+.inPut .right input{
+	width:100%;
+	border-radius:10px;
+	height: 35px;
+	text-indent:10px;
+    font-size:12px;
+    border: 1px solid #aaa;
+}
+.inPut .seat{
+	width: 352px;
+	height: 90px;
 	float: left;
-	width: 140px;
+	padding-left: 20px;
+	position: relative;
 }
-.formLayer .left{
-	margin-right: 15px;
+.inPut .sNum{
+	position: absolute;
+	right: 87px;
+	bottom: -27px;
+
 }
-.formLayer .left input,
-.formLayer .right input{
-	width: 100%;
-	border-radius: 7px;
-	height: 30px;
-	text-indent: 5px;
-	font-size: 0.9em;
+.inPut .seat label{
+	width: 110px;
+}
+.inPut .seat .sNum label.snumO{
+	width: 110px;
+	position: absolute;
+	right: -10px;
+	bottom:81px;
+}
+.inPut .seat .sNum label.cnumO{
+	width: 110px;
+	position: absolute;
+	bottom:81px;
+	right: -100px;
+}
+.inPut .seat .sNum input#snum{
+	width: 80px;
+	height: 35px;
+	position: absolute;
+	right:20px;
+	bottom:46px;
+	border-radius:10px;
 	border: 1px solid #aaa;
 }
-.formLayer .leftT{
-	width: 130px;
-	float: left;
-	margin-right: 20px
-}
-.formLayer .mid{
-	margin-right: 10px;
-}
-.formLayer .mid, 
-.formLayer .rightT{
-	float: left;
-	width: 70px;
-}
-.formLayer .leftT input{
-	width: 100%;
-	border-right: 7px;
-	height: 30px;
-	text-indent: 5px;
-	font-size: 0.9em;
+.inPut .seat .sNum input#cnum{
+	width: 80px;
+	height: 35px;
+	position: absolute;
+	right:-70px;
+	bottom:46px;
+	border-radius:10px;
 	border: 1px solid #aaa;
 }
-.formLayer .mid input,
-.formLayer .rightT input{
-	width: 100%;
-	border-right: 7px;
-	height: 30px;
-	text-indent: 5px;
-	font-size: 0.9em;
-	border: 1px solid #aaa;
-	margin-bottom: 20px;
-}
-.tBtn{
-	width: 100%;
-	height: 30px;
-	border: 0 none;
+.inPut .tBtn{
+	width: 313px;
+	height: 40px;
+	border:0 none;
 	cursor:pointer;
 	background:orange;
-	color:white;
-	font-weight: bold;
-	font-size: 0.9em;
-	border-radius: 7px;
+	margin-left:23px;
+    font-weight: bold;
+    font-size:1em;
+    border-radius:10px;
+    color:white;
+    box-shadow:5px 5px  #cdcdcd;
+    transition:0.3s;
+}   
+.inPut .tBtn:hover{
+	transform: translate(3px 3px);
+	box-shadow:0 0 #000;
+}   
+.content .containerOne .section{
+	position: relative;
 }
-.tBtn:hover{
-	box-shadow: -1px 1px 5px #bbb;
+.content .containerOne .section>ul>li{
+   float: left;
+   height: 300px;
+   margin-bottom: 20px;
+   margin-top: 50px;
+   margin-right: 20px;
+   position: relative;
+   z-index:1;
 }
+.radio{
+	width: 130px;
+	float: left;
+}
+.radio input{
+	display: none;
+}
+.label label{
+	width: 130px;
+	height: 75px;
+	float: left;
+	cursor:pointer;
+}
+.label{
+	text-align: center;
+	line-height: 75px;
+}
+.label label:nth-child(1){background-color:#006599;color:white;}
+.label label:nth-child(2){background-color:#006599;color:white;}
+.label label:nth-child(3){background-color:#0099cb;color:white;}
+.label label:nth-child(4){background-color:#0099cb;color:white;}
+
+.radio input.One:checked ~ .label label:first-child{background-color: #fff;color:#484848;}
+.radio input.Two:checked ~ .label label:nth-child(2){background-color: #fff;color:#484848;}
+.radio input.Three:checked ~ .label label:nth-child(3){background-color: #fff;color:#484848;}
+.radio input.Four:checked ~ .label label:nth-child(4){background-color: #fff;color:#484848;}
 
 
 /*travel-go*/
@@ -526,9 +603,13 @@
 	padding-left: 15px;
 	padding-top: 13px;
 }
+.boxSix .boxSixTxtBottom:hover{
+	opacity: 0.9
+}
 .boxSix .boxSixTxtBottom a{
 	color:white;
 	font-weight: bold;
+	display: block;
 }
 
 /*box7*/
