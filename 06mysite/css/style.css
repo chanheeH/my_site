@@ -1,1 +1,14 @@
 @charset "uft-8";
+
+header{}
+.headerWrap{}
+.menuWrap{
+	width: 1500px;
+}
+.menuWrap .logo{}
+.menuWrap .logo a{}
+.menuWrap .menu{}
+.menuWrap .menu ul{}
+.menuWrap .menu ul li{
+	float: left;
+}

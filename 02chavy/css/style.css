@@ -14,48 +14,49 @@
       div.gnbWrap>a:hover{
         background-color: #fff;
       }
-      div.gnbWrap>div.gnbMenu{
+      div.gnbWrap>ul.gnbMenu{
         position: absolute;
         left:200px;
         width: 700px;
       }
-      div.gnbWrap>div.gnbMenu:after{
+      div.gnbWrap>ul.gnbMenu:after{
         content:"";
         display: block;
         clear:both;
       }
-      div.gnbWrap>div.gnbMenu>li{
+      div.gnbWrap>ul.gnbMenu>li{
         float:left;
         width:25%;
       }
-     div.gnbWrap>div.gnbMenu>li>a{
+     div.gnbWrap>ul.gnbMenu>li>a{
         display: block;
         text-align: center;
         line-height:45px;
       }
-      div.gnbWrap>div.gnbMenu>li:first-child>a{
+      div.gnbWrap>ul.gnbMenu>li:first-child>a{
         text-decoration: underline #aaa;
       }
       /*top login*/
-      div.gnbWrap>div.gnbLogin{position: absolute;right:0;top:15;width: 250px;}
+      div.gnbWrap>ul.gnbLogin{position: absolute;right:0;top:15;width: 250px;}
 
-      div.gnbWrap>div.gnbLogin:after{
+      div.gnbWrap>ul.gnbLogin:after{
         content:"";
         display: block;
         clear:both;
       }
-      div.gnbWrap>div.gnbLogin>li{float:left;width: 50%;}
-      div.gnbWrap>div.gnbLogin>li>a{display: block;text-align: center;line-height: 45px}
-      div.gnbWrap>div.gnbLogin>li:nth-child(2){
+      div.gnbWrap>ul.gnbLogin>li{float:left;width: 50%;}
+      div.gnbWrap>ul.gnbLogin>li>a{display: block;text-align: center;line-height: 45px}
+      div.gnbWrap>ul.gnbLogin>li:nth-child(2){
         background-color:navy;
         border-radius: 70px;
       }
-      div.gnbWrap>div.gnbLogin>li:last-child>a{
+      div.gnbWrap>ul.gnbLogin>li:last-child>a{
         color:white;
       }
       div.gnbWrap img{position: absolute;top:0;}
-      div.gnbWrap>div.gnbMenu>li>a:hover{background-color:#eee;border-radius: 70px;}
-      div.gnbWrap>div.gnbLogin>li>a:hover{background-color: #eee;border-radius: 70px;}
+      div.gnbWrap>ul.gnbMenu>li>a:hover{background-color:#eee;border-radius: 70px;}
+      div.gnbWrap>ul.gnbLogin>li:hover{background-color: #eee;border-radius: 70px;}
+      div.gnbWrap>ul.gnbLogin>li:hover a{color:black;}
 
 
       /*img slide*/
