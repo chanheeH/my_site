@@ -4,7 +4,17 @@
 	<meta charset="UTF-8">
 	<title>my site</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				pager:false
+			})
+		});
+	</script>
 </head>
 <body>
 	<header class="headerWrap">
@@ -13,21 +23,21 @@
 			<div class="menu">
 				<ul class="clearfix">
 					<li><a href="#">카테고리</a>
-						<ul>
+						<ul class="smenu">
 							<li><a href="#">국내도서</a></li>
 							<li><a href="#">외국도서</a></li>
 							<li><a href="#">만화</a></li>
 						</ul>
 					</li>
 					<li><a href="#">추천도서</a>
-						<ul>
+						<ul class="smenu">
 							<li><a href="#">베스트셀러</a></li>
 							<li><a href="#">스테디셀러</a></li>
 							<li><a href="#">이 달의 책</a></li>
 						</ul>
 					</li>
 					<li><a href="#">신작도서</a>
-						<ul>
+						<ul class="smenu">
 							<li><a href="#">소설</a></li>
 							<li><a href="#">인문학</a></li>
 							<li><a href="#">자기계발</a></li>
@@ -37,7 +47,7 @@
 					<li><a href="#">오디오북</a></li>
 					<li><a href="#">무료도서</a></li>
 					<li><a href="#">포스트</a>
-						<ul>
+						<ul class="smenu">
 							<li><a href="#">인기포트스</a></li>
 							<li><a href="#">최신포스트</a></li>
 						</ul>
@@ -50,5 +60,33 @@
 			</div> <!-- menu -->
 		</div> <!-- menuWrap -->
 	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<a href="#">
+					<div class="view">
+						<img src="images/slider01.png" alt="">
+						<div class="visualTxt">
+							<h3>이번달 신작</h3>
+							<p>우리가 몰랐던 마약의 역사, 종류, 정책,<br>그리고 한국의 마약 실태<br>마약에 대한 무지와 편견을 날려버릴 신나는 마약 교양서</p>
+							<p>#우리는 마약을 모른다</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="view">
+						<img src="images/slider01.png" alt="">
+						<div class="visualTxt">
+							<h3>이번달 신작</h3>
+							<p>우리가 몰랐던 마약의 역사, 종류, 정책,<br>그리고 한국의 마약 실태<br>마약에 대한 무지와 편견을 날려버릴 신나는 마약 교양서</p>
+							<p>#우리는 마약을 모른다</p>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>

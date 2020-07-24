@@ -4,11 +4,105 @@ header{}
 .headerWrap{}
 .menuWrap{
 	width: 1500px;
+	height: 50px;
+	margin: 0 auto;
+	_background:skyblue;
+	position: relative;
 }
-.menuWrap .logo{}
-.menuWrap .logo a{}
-.menuWrap .menu{}
-.menuWrap .menu ul{}
+.menuWrap .logo a{
+	color:#86c616;
+	line-height: 40px;
+}
+.menuWrap .menu{
+	position: absolute;
+	top: 0;
+	right: 100px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	z-index: 1;
+}
 .menuWrap .menu ul li{
 	float: left;
+	width: 150px;
+}
+.menuWrap .menu ul li a{
+	display: block;
+}
+.menuWrap .menu .smenu{
+	width: 100%;
+	background-color:gray;
+	display: none;
+}
+.menuWrap .menu .smenu li{
+	
+}
+.menuWrap .menu .smenu li a{
+}
+.menuWrap .language{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: -110px;
+}
+.menuWrap .language a{
+	border: 1px solid #000;
+	text-align: center;
+	padding:4px;
+}
+.menuWrap .menu>ul>li:hover{
+	background-color:#86c616;
+	border-radius: 10px;
+}
+.menuWrap .menu li:hover .smenu{
+	display: block;
+
+}
+.smenu>li:hover{
+	background:#cce6a0;
+	border-radius: 10px;
+}
+.menuWrap .menu>ul>li:hover a{
+	color:white;
+}
+.visual{}
+.slider{
+
+}
+.view{
+	width: 1500px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: #486757;
+	position: relative;
+}
+.view a{}
+.view img{
+	width: 250px;
+	position: absolute;
+	top: 70px;
+	left:350px;
+}
+.view .visualTxt{
+	position: absolute;
+	right: 300px;
+	top: 100px;
+}
+.view .visualTxt h3{
+	color:white;
+	font-size: 3.5em;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.view .visualTxt p{
+	color:white;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.bx-wrapper {
+    -moz-box-shadow: 0 none;
+    -webkit-box-shadow: 0 none;
+    box-shadow: 0 none;
+    border: 0 none;
 }
