@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>company</title>
+	<title>my site</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style_self.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
-	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-		 	$(".youtube").colorbox({
-				iframe:true,
-				innerWidth:300,
-				innerHeight:160
-			});
+			$(".slider").bxSlider({
+				pager:false
+			})
 		});
 	</script>
 </head>
 <body>
-	<header id="header" class="main">
-		<div id="header_top" class="clearfix">
-			<h1><a href="#">LOGO</a></h1>
-			<nav id="main_menu">
+	<header class="headerWrap">
+		<div class="menuWrap">
+			<h1 class="logo"><a href="#">LOGO</a></h1>
+			<div class="menu">
 				<ul class="clearfix">
 					<li><a href="#">카테고리</a>
 						<ul class="smenu">
@@ -58,63 +53,40 @@
 						</ul>
 					</li>
 				</ul>
-			</nav>
 				<div class="language">
 					<a href="#">KOR</a>
 					<a href="#">ENG</a>
 				</div>
-			<div class="toggleMenu">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-		</div>
-		<div class="slider_wrap">
-			<ul class="slider">
+			</div> <!-- menu -->
+		</div> <!-- menuWrap -->
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li>
 				<a href="#">
-					<li class="first">
-						<div class="slider_txt">
+					<div class="view">
+						<img src="images/slider01.png" alt="">
+						<div class="visualTxt">
 							<h3>이번달 신작</h3>
 							<p>우리가 몰랐던 마약의 역사, 종류, 정책,<br>그리고 한국의 마약 실태<br>마약에 대한 무지와 편견을 날려버릴 신나는 마약 교양서</p>
 							<p>#우리는 마약을 모른다</p>
 						</div>
-					</li>
+					</div>
 				</a>
+			</li>
+			<li>
 				<a href="#">
-					<li class="second">
-						<div class="slider_txtTwo">
-							<h3>이달의 베스트셀러</h3>
+					<div class="view">
+						<img src="images/slider01.png" alt="">
+						<div class="visualTxt">
+							<h3>이번달 신작</h3>
 							<p>우리가 몰랐던 마약의 역사, 종류, 정책,<br>그리고 한국의 마약 실태<br>마약에 대한 무지와 편견을 날려버릴 신나는 마약 교양서</p>
 							<p>#우리는 마약을 모른다</p>
 						</div>
-					</li>
+					</div>
 				</a>
-			</ul>
-		</div>
-		<div class="content">
-			<ul>
-				<li class="conOne">
-					<a href="#"><img src="images/best1.jpg" alt="" class="conOneImgOne">
-						<img src="images/best2.jpg" alt="" class="conOneImgTwo">
-						<img src="images/best3.jpg" alt="" class="conOneImgThree"></a>
-					<p>이번주의 베스트셀러</p>
-					<a href="#" class="btn">더보기</a>
-				</li>
-				<li class="conTwo">
-					<a href="https://youtu.be/WYhF_aFit_c" class="youtube"><i class="far fa-play-circle"></i><img src="images/warren_buffett.png" alt=""></a>
-				</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				<li>12</li>
-			</ul>
-		</div>
-	</header>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
