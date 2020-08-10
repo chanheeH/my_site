@@ -37,6 +37,7 @@
 	text-align: center;
 	padding: 4px;
 }
+#header .language a.active{background:#a1c397;}
 #main_menu li:hover .smenu{
 	display: block;
 }
@@ -110,7 +111,7 @@ _.slider_wrap h3:after{
 	width: 1260px;height: 1260px;position: absolute;
 	left:50%;transform: translateX(-50%);background-color: #fff;bottom:0;}
 
-		.content>ul>li{float: left;width: 25%;height: 315px;border: 1px solid #000;}
+		.content>ul>li{float: left;width: 25%;height: 315px;_border: 1px solid #000;}
 		.content>ul>li:nth-child(2n){background:skyblue;}
 		.content>ul>li:nth-child(5){width: 945px;height: 630px;}
 
@@ -311,3 +312,431 @@ _.slider_wrap h3:after{
 	bottom: 10px;
 	left: 10px;
 }
+/*content7*/
+.conSeven{
+	background: #233957;
+}
+.conSeven h3{
+	font-size: 25px;
+	padding: 10px;
+	color:white;
+	margin-bottom: 5px;
+}
+.conSeven a{
+	font-size: 20px;
+	color:white;
+}
+.conSeven p{
+	padding: 10px;
+}
+
+
+/*contentTwo*/
+.contentTwo{
+	width: 1260px;
+	height: 800px;
+	_background:orange;
+	margin: 0 auto;
+	position: relative;
+	margin-top: -150px;
+}
+.contentTwo li{
+	width: 33.33%;
+	color:#303030;
+}
+.contentTwo img{
+	width: 100px;
+}
+.contentTwo h3{
+	font-size: 25px;
+	color:#303030;
+	margin-bottom: 20px;
+}
+.mostOne img{
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+.contentTwo .mostOne p.booknumber{
+	position: absolute;
+	left: 110px;
+	top: 120px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostOne p.bookname{
+	position: absolute;
+	left: 140px;
+	top: 110px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostOne p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 140px;
+	top: 140px;
+}
+.mostTwo img{
+	position: absolute;
+	top: 70px;
+	left: 460px;
+}
+.contentTwo .mostTwo p.booknumber{
+	position: absolute;
+	left: 570px;
+	top: 120px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostTwo p.bookname{
+	position: absolute;
+	left: 600px;
+	top: 110px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostTwo p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 600px;
+	top: 140px;
+}
+.mostThree img{
+	position: absolute;
+	top: 70px;
+	left: 890px;
+}
+.contentTwo .mostThree p.booknumber{
+	position: absolute;
+	left: 1000px;
+	top: 120px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostThree p.bookname{
+	position: absolute;
+	left: 1030px;
+	top: 110px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostThree p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 1030px;
+	top: 140px;
+}
+.mostFour img{
+	position: absolute;
+	top: 270px;
+	left: 0px;
+}
+.contentTwo .mostFour p.booknumber{
+	position: absolute;
+	left: 110px;
+	top: 330px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostFour p.bookname{
+	position: absolute;
+	left: 140px;
+	top: 320px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostFour p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 140px;
+	top: 375px;
+}
+.mostFive img{
+	position: absolute;
+	top: 270px;
+	left: 460px;
+}
+.contentTwo .mostFive p.booknumber{
+	position: absolute;
+	left: 570px;
+	top: 330px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostFive p.bookname{
+	position: absolute;
+	left: 600px;
+	top: 320px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostFive p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 600px;
+	top: 350px;
+}
+.mostSix img{
+	position: absolute;
+	top: 270px;
+	left: 890px;
+}
+.contentTwo .mostSix p.booknumber{
+	position: absolute;
+	left: 1000px;
+	top: 330px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostSix p.bookname{
+	position: absolute;
+	left: 1030px;
+	top: 320px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostSix p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 1030px;
+	top: 350px;
+}
+.mostSeven img{
+	position: absolute;
+	top: 470px;
+	left: 0px;
+}
+.contentTwo .mostSeven p.booknumber{
+	position: absolute;
+	left: 110px;
+	top: 530px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostSeven p.bookname{
+	position: absolute;
+	left: 140px;
+	top: 520px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostSeven p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 140px;
+	top: 550px;
+}
+.mostEight img{
+	position: absolute;
+	top: 470px;
+	left: 460px;
+}
+.contentTwo .mostEight p.booknumber{
+	position: absolute;
+	left: 570px;
+	top: 530px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostEight p.bookname{
+	position: absolute;
+	left: 600px;
+	top: 520px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostEight p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 600px;
+	top: 550px;
+}
+.mostNine img{
+	position: absolute;
+	top: 470px;
+	left: 890px;
+}
+.contentTwo .mostNine p.booknumber{
+	position: absolute;
+	left: 1000px;
+	top: 530px;
+	font-weight: bold;
+	font-size: 22px
+}
+.contentTwo .mostNine p.bookname{
+	position: absolute;
+	left: 1030px;
+	top: 520px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contentTwo .mostNine p.writer{
+	position: absolute;
+	font-size: 16px;
+	left: 1030px;
+	top: 550px;
+}
+
+/*contentThree*/
+.contentThree{
+	width: 1260px;
+	height: 400px;
+	margin: 0 auto;
+	_background: gray;
+}
+.contentThree ul{}
+.contentThree ul li{
+	float: left;
+	width: 50%;
+	height: 300px;
+}
+.contentThree ul li.device{
+	background:#f1f2f4;
+	position: relative;
+}
+.contentThree ul li.device img{
+	width: 100px;
+	position: absolute;
+}
+.contentThree ul li.device a{
+	position: absolute;
+}
+.contentThree ul li a.appstore{
+	left: 20px;
+	top: 130px;
+}
+.contentThree ul li a.google{
+	left: 140px;
+	top: 130px;
+}
+.contentThree ul li a.mac{
+	left: 20px;
+	top: 170px;
+}
+.contentThree ul li a.window{
+	left: 140px;
+	top: 170px;
+}
+.contentThree ul li img.devicepic{
+	width: 350px;
+	right: 20px;
+	top: 50px;
+}
+.contentThree ul li.device h3{
+	font-size: 30px;
+	padding: 35px;
+	color:#303030;
+}
+.contentThree ul li.device h3:after{
+	content:"";
+	display:block;
+	width:190px;
+	height: 2px;
+	background:#303030;
+}
+.contentThree ul li a.deviceBtn{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 3px 20px 3px 20px;
+	color:#303030;
+	border: 1px solid #000;
+	position: absolute;
+	bottom: 50px;
+	left: 85px;
+}
+.contentThree ul li.contest{
+	background:#8d9fbd;
+	position: relative;
+}
+.contentThree ul li.contest img.write{
+	width: 450px;
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+}
+.contentThree ul li.contest img.goBtn{
+	position: absolute;
+	top: 50px;
+	right: 5px;
+	z-index: 1;
+}
+.contentThree ul li.contest h3{
+	color:white;
+	font-size: 25px;
+	padding-top: 30px;
+	padding-left: 20px;
+	z-index: 1;
+	position: relative;
+}
+
+/*footer*/
+.footerWrap{
+	height:250px;
+	background:pink;
+}
+.footerWrap .bar{
+	width: 100%;
+	height: 2px;
+	background-color: #303030;
+}
+.footer{
+	width: 1260px;
+	margin: 0 auto;
+	position: relative;
+}
+.footer h1{
+	line-height:50px;
+	padding-top: 60px;
+}
+.footer ul{
+	position: absolute;
+	top: 75px;
+	left: 150px;
+}
+.footer ul li{
+	float: left;
+	width: 70px;
+	font-size: 14px;
+	border-right: 1px solid #303030;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.footer ul li:nth-child(3),
+.footer ul li:nth-child(4){
+	width: 135px;
+}
+.footer ul li:nth-child(4){
+	border-right: 0 none;
+}
+.footer ul li a{
+	color:#303030;
+}
+.footer p{
+	font-size: 14px;
+	color:#303030;
+	position: absolute;;
+	left: 155px;
+	top: 130px;
+}
+.footer img{
+	position: absolute;
+	width: 50px;
+	top: 140px;
+}
+.footer img.facebook{
+	right: 150px;
+}
+.footer img.instagram{
+	right: 100px;
+}
+.footer img.twitter{
+	right: 50px;
+}
+.footer img.youtube{
+	right: 0;
+}
+
+
+
+/*subpage*/
