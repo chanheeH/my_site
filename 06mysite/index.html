@@ -40,7 +40,28 @@
 				innerWidth:300,
 				innerHeight:160
 			});
+			$(".toggleMenu").click(function(){
+				console.log($(this).attr("class"));
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({right:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({right:"-100%"},300);
+				}
+			});
+		});
+		$(window).resize(function(){
+			var wSize = $(window).width();
+			console.log(wSize);
 
+			if(wSize > 576){
+				$("#main_menu").css("top",0);
+				$(".toggleMenu").removeClass("change");
+			}else{
+				$("#main_menu").css("top","-100%");
+			}
 		});
 	</script>
 </head>
@@ -76,7 +97,7 @@
 					<li><a href="#" class="mainMenu">무료도서</a></li>
 					<li><a href="#" class="mainMenu">포스트</a>
 						<ul class="smenu">
-							<li><a href="#">인기포트스</a></li>
+							<li><a href="#">인기포스트</a></li>
 							<li><a href="#">최신포스트</a></li>
 						</ul>
 					</li>
@@ -321,7 +342,7 @@
 					<a href="#" class="mac"><img src="images/mac.png" alt=""></a>
 					<a href="#" class="window"><img src="images/window.png" alt=""></a>
 					<img src="images/devices.png" alt="" class="devicepic">
-					<a href="#" class="deviceBtn">더보기</a>
+					<a href="#"><img src="images/go.png" alt="" class="goBtn"></a>
 				</li>
 				<li class="contest">
 					<img src="images/write.jpg" alt="" class="write">
