@@ -23,7 +23,7 @@ body{min-width: 922px}
 	top: 50%;
 	transform:translate(-50%,-50%);
 }
-#main_menu>ul>li{float: none;}
+#main_menu>ul>li{float: none;text-align: center;}
 #main_menu a.mainMenu{display: block;line-height:50px;padding:0 30px;color:white;font-weight:bold;}
 #main_menu a.mainMenu:after{
 	content:"";display:block;width:0;height: 2px;
@@ -93,7 +93,7 @@ body{min-width: 922px}
 	width: 800px;
 }
 .slider_wrap .slider_txt{
-	width: 100%;position: absolute;
+	width: 360px;position: absolute;
 	left: 500px;top:120px;color:white;text-align: left;
 }
 .slider_wrap h3{
@@ -205,16 +205,16 @@ body{min-width: 922px}
 	width: 315px;
 	height: 315px;
 	text-align: left;
-	padding: 15px;
+	padding: 25px;
 }
 .conThree .txtSlide li h3{
 	margin-bottom: 30px;
-	font-size: 25px;
+	font-size: 20px;
 	color:white;
 }
 .conThree .txtSlide li a{
 	color:white;
-	font-size: 20px;
+	font-size: 16px;
 }
 .conThree .bx-pager{bottom: 20px;}
 .content .conThree .bx-wrapper {
@@ -343,17 +343,18 @@ body{min-width: 922px}
 	background: #233957;
 }
 .conSeven h3{
-	font-size: 25px;
-	padding: 10px;
+	font-size: 20px;
+	padding: 25px;
 	color:white;
 	margin-bottom: 5px;
 }
 .conSeven a{
-	font-size: 20px;
+	font-size: 16px;
 	color:white;
 }
 .conSeven p{
-	padding: 10px;
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
 
@@ -622,7 +623,7 @@ body{min-width: 922px}
 	position: relative;
 }
 .contentThree ul li.device img{
-	width: 70px;
+	width: 80px;
 	position: absolute;
 }
 .contentThree ul li.device a{
@@ -630,24 +631,30 @@ body{min-width: 922px}
 }
 .contentThree ul li a.appstore{
 	left: 20px;
-	top: 90px;
+	top: 100px;
 }
 .contentThree ul li a.google{
 	left: 120px;
-	top: 90px;
+	top: 100px;
 }
 .contentThree ul li a.mac{
 	left: 20px;
-	top: 120px;
+	top: 140px;
 }
 .contentThree ul li a.window{
 	left: 120px;
-	top: 120px;
+	top: 140px;
 }
 .contentThree ul li img.devicepic{
 	width: 200px;
 	right: 20px;
-	top: 50px;
+	bottom: 10px;
+}
+.contentThree ul li.device .goBtn{
+	width: 50px;
+	top: -42px;
+	left: 400px;
+	z-index: 1;
 }
 .contentThree ul li.device h3{
 	font-size: 20px;
@@ -661,22 +668,12 @@ body{min-width: 922px}
 	height: 2px;
 	background:#303030;
 }
-.contentThree ul li a.deviceBtn{
-	font-size: 12px;
-	font-weight: bold;
-	padding: 3px 20px 3px 20px;
-	color:#303030;
-	border: 1px solid #000;
-	position: absolute;
-	bottom: 20px;
-	left: 60px;
-}
 .contentThree ul li.contest{
 	background:#8d9fbd;
 	position: relative;
 }
 .contentThree ul li.contest img.write{
-	width: 300px;
+	width: 280px;
 	position: absolute;
 	bottom: 0px;
 	right: 80px;
@@ -691,8 +688,7 @@ body{min-width: 922px}
 .contentThree ul li.contest h3{
 	color:white;
 	font-size: 18px;
-	padding-top: 15px;
-	padding-left: 20px;
+	padding:25px;
 	z-index: 1;
 	position: relative;
 }
@@ -700,7 +696,7 @@ body{min-width: 922px}
 /*footer*/
 .footerWrap{
 	height:250px;
-	background:pink;
+	_background:pink;
 }
 .footerWrap .bar{
 	width: 100%;
@@ -714,7 +710,8 @@ body{min-width: 922px}
 }
 .footer h1{
 	line-height:50px;
-	padding-top: 60px;
+	padding-top: 58px;
+	padding-left: 10px;
 }
 .footer ul{
 	position: absolute;

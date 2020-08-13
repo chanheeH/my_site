@@ -25,7 +25,8 @@ body{min-width: 1260px}
 #header_top .toggleMenu{display: none;}
 
 .smenu{
-	width: 100%;
+	width: 90px;
+	margin: 0 auto;
 	display: none;
 }
 .smenu li{
@@ -49,9 +50,11 @@ body{min-width: 1260px}
 #header .language a.active{background:#a1c397;}
 #main_menu li:hover .smenu{
 	display: block;
+	background-color: #a1c397;
+	border-radius: 20px;
 }
 .smenu li:hover{
-	background-color: #a1c397;
+	background-color: #8d9fbd;
 	border-radius: 20px;
 }
 /*bxslider*/
@@ -644,16 +647,6 @@ body{min-width: 1260px}
 	height: 2px;
 	background:#303030;
 }
-.contentThree ul li a.deviceBtn{
-	font-size: 16px;
-	font-weight: bold;
-	padding: 3px 20px 3px 20px;
-	color:#303030;
-	border: 1px solid #000;
-	position: absolute;
-	bottom: 50px;
-	left: 85px;
-}
 .contentThree ul li.contest{
 	background:#8d9fbd;
 	position: relative;
@@ -681,7 +674,7 @@ body{min-width: 1260px}
 /*footer*/
 .footerWrap{
 	height:250px;
-	background:pink;
+	_background:pink;
 }
 .footerWrap .bar{
 	width: 100%;
@@ -696,6 +689,7 @@ body{min-width: 1260px}
 .footer h1{
 	line-height:50px;
 	padding-top: 60px;
+	padding-left: 10px;
 }
 .footer ul{
 	position: absolute;
