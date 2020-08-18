@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AGRA (FULL PAGE)</title>
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.fullpage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(function(){
+			//$(".slider").bxSlider({});
+			$(".fullpage").fullpage({
+				anchor:["a1st","a2st","a3st","a4st"],
+				navigation:true,
+				navigationPosition:'right',
+				afterLoad:function(anchorslink,index){
+					console.log(anchorslink+", "+index);
+					if(index == 2){
+						$("#onViewTwo").addClass("move");
+					}else{
+						$("#onViewTwo").removeClass("move");
+					}
+				}
+			});
+				$(".menu_scroll>li.menu_name").click(function(){
+				$(".menu_scroll>li.menu_name").removeClass("active");
+				$(this).addClass("active");
+			});
+				$(".locate").colorbox({
+				iframe:true,
+				innerWidth:604,
+				innerHeight:454
+			});
+				$(".menudetail").colorbox({
+				iframe:true,
+				innerWidth:"75%",
+				innerHeight:"60%"
+			});
+				$(".agrainform").hide();
+					$(".brandinform>ul>li").click(function(){
+						var i = $(this).index();
+						$(".agrainform").show();
+						$(".agrainform>div").hide().eq(i).show();
+					});
+		});
+	</script>
+</head>
+<body>
+	<div class="logo">
+		<a href="#"><h2>AGRA</h2></a>
+	</div>
+	<nav class="menu">
+		<ul class="menu_scroll clearfix">
+			<li class="menu_name active"><a href="#a2st">HISTORY</a></li>
+			<li class="menu_name"><a href="#a3st">MENU</a></li>
+			<li class="menu_name"><a href="#a4st">LOCATION</a></li>
+			<li><a href="#"><img src="images/facebook.png" alt="" class="icon1"></a></li>
+			<li><a href="#"><img src="images/instagram.png" alt="" class="icon2"></a></li>
+		</ul>
+	</nav>
+	<div class="fullpage">
+		<div class="section" id="first" data-anchor="a1st">
+			<div class="slider first">
+				1
+			</div>
+			<div class="slider second">
+				2
+			</div>
+			<div class="scroll">
+				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="second" data-anchor="a2st">
+				<div class="colortxt">brand</div>
+				<h3>BRAND</h3>
+				<div class="brandinform">
+					<ul>
+						<li><a href="#">아그라 시트론</a></li>
+						<li><a href="#">아그라 어반 스파이스</a></li>
+					</ul>
+					<div class="agrainform">
+						<div>
+							<img src="images/agra_citron.png" alt="">
+							<h4>인도 황실 분위기에서 즐기는 파인 인디안 다이닝</h4>
+							<h5>이태원, 서래마을, 종로, 잠실 에비뉴엘 월드타워점</h5>
+							<p>A dining restaurant where you can taste traditional royal cuisine of India</p>
+							<p>ITAEWON, SEORAE VILLAGE, JONGNO, JAMSIL LOTTE AVENUEL WORLD TOWER</p>
+						</div>
+						<div>
+							<img src="images/agra_urban.png" alt="">
+							<h4>밝은 분위기에서 즐기는 컴템프러리 인디안 레스토랑</h4>
+							<h5>코엑스, 롯데백화점 잠실점 11층, 롯데 피트인 산본점 9층</h5>
+							<p>You can enjoy a new style of indian food in a casual and bright atmosphere</p>
+							<p>COEX STORE, JAMSIL LOTTE DEPARTMENT STORE, SANBON LOTTE PITIN STORE</p>
+						</div>
+					</div>
+				</div>
+			<div class="scroll">
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="third" data-anchor="a3st">
+			<div class="mainmenupg">
+				<a href="menudetail.html" class="menudetail">
+					<div class="colortxt">menu</div>
+					<h3>MENU</h3>
+				</a>
+			</div>
+			<div class="scroll">
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="fourth" data-anchor="a4st">
+			<div class="slide">
+				<div class="view">
+					<ul>
+						<li class="place"><h2>아그라 시트론</h2></li>
+						<li class="one">
+							<a href="map01.html" class="locate">
+								<h4>잠실 에비뉴엘점</h4>
+								<p>서울시 송파구 올림픽로 300<br>롯데백화점 에비뉴엘 월드타워점 6F<br><span class="bold fsz12">02-3213-2633</span><br>평일 11:30~22:00 백화점정기무휴<br>주말 11:30~15:00 주말런치</p>
+							</a>
+						</li>
+						<li class="two">
+							<a href="map02.html" class="locate">
+								<h4>종로점</h4>
+								<p>서울시 중구 을지로 5길 26<br>미래에셋빌딩 B2F<br><span class="bold fsz12">02-6030-8977</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치</p>
+							</a>
+						</li>
+						<li class="three">
+							<a href="map03.html" class="locate">
+								<h4>서래마을점</h4>
+								<p>서울시 서초구 서래로 13<br>일진빌딩 2F<br><span class="bold fsz12">070-4194-4320</span><br>평일 11:30~22:00 연중무휴<br>평일 15:00~17:00 브레이크 타임<br>주말 11:30~15:00 주말런치</p>
+							</a>
+						</li>
+						<li class="four">
+							<a href="map04.html" class="locate">
+								<h4>이태원점</h4>
+								<p>서울시 용산구 이태원로 153<br>덕흥빌딩 B1F<br><span class="bold fsz12">070-8230-4320</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치<br>주말 11:30~23:00 금요일/토요일</p>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- view -->
+			</div> <!-- slide -->
+			<div class="slide">
+				<div class="view">
+					<ul class="clearfix">
+						<li class="place"><h2>아그라 어반 스파이스</h2></li>
+						<li class="one">
+							<a href="map05.html" class="locate">
+								<h4>롯데몰 은평점</h4>
+								<p>서울시 은평구 진관동 79-15<br>롯데몰 은평뉴타운점 B1F<br><span class="bold fsz12">02-6975-5067</span><br>매일 10:30~22:00<br>휴무일 : 롯데몰 정기휴무</p>
+							</a>
+						</li>
+						<li class="two">
+							<a href="map06.html" class="locate">
+								<h4>롯데피트인 산본점</h4>
+								<p>경기도 군포시 번영로 485<br>롯데피트인 9F<br><span class="bold fsz12">031-8033-1470</span><br>매일 10:30~22:00<br>휴무일 : 연중무휴</p>
+							</a>
+						</li>
+						<li class="three">
+							<a href="map07.html" class="locate">
+								<h4>코엑스점</h4>
+								<p>서울시 강남구 영동대로 513<br>코엑스 B1F 아이 102호<br><span class="bold fsz12">070-8802-4320</span><br>매일 11:00~22:00<br></p>
+							</a>
+						</li>
+						<li class="four">
+							<a href="map08.html" class="locate">
+								<h4>잠실 롯데백화점</h4>
+								<p>서울시 송파구 올림픽로 240<br>롯데백화점 11F<br><span class="bold fsz12">070-8820-4320</span><br>매일 10:30~22:00<br>휴무일 : 백화점 정기휴무</p>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- view -->
+			</div> <!-- slide -->
+		</div>
+		<div class="section fp-auto-height" data-anchor="a5st">
+			<div class="footer clearfix">
+				<div class="footertxt">
+					<h4>AGRA</h4>
+					<p>AGRA 서울시 송파구 방이동 171-5 한양빌딩 402호 070.8299.2323 agrainfo@agra.co.kr</p>
+					<p>대표: 김휘규 사업자등록번호: 314-86-45628</p>
+					<p>COPYRIGHT (C) 2015. AGRA, ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
