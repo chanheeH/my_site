@@ -24,7 +24,8 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: cover
+	object-fit: cover;
+	top: 0;
 }
 .section .colortxt{
 	width: 100%;
@@ -101,60 +102,69 @@
 	margin-bottom: 30px;
 	width: 150px;
 }
-/*LOGO*/
-.logo{
-	width: 100px;
-}
-.logo h2{
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 3em;
-	position: fixed;
-	z-index: 1;
-	color:white;
-	background-color:#303030;
-}
+
 
 
 /*MENU*/
-nav.menu{
-	width: 80px;
-	height: 160px;
-	background-color:#eee;
-	position: fixed;
-	right: 10px;
-	bottom: 120px;
-	z-index: 1;
-	border-radius: 30px 0 0 30px;
+#header{
+	position: relative;
 }
-nav.menu .menu_scroll{}
-nav.menu .menu_scroll li{}
+.headerWrap{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	background-color: #303030;
+	z-index: 2
+}
+.headerWrap .logo{
+	width: 103px !important;
+	position: absolute;
+	top:50% !important;
+	left: 50% !important;
+	transform: translate(-50%,-50%);
+}
+nav.menu{
+	width: 100px;
+	height: 100%;
+	float: right;
+	position: fixed;
+	right: -100%;
+	background-color: #aaa;
+}
+nav.menu .menu_scroll{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+}
+nav.menu .menu_scroll li{
+	float: none;
+}
 nav.menu .menu_scroll li a{
 	display: block;
-	line-height: 35px;
+	line-height: 40px;
 	text-align: center;
-	color:#303030;
+	color:white;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 15px;
 }
 nav.menu .menu_scroll li a:first-child{
-	padding-top: 5px;
+	padding-top: 10px;
 }
 nav.menu .menu_scroll li img{
-	width: 25px;
+	width: 35px;
 	position: absolute;
-	bottom: 10px;
-	right: 15px;
+	top: 220px;
+	right: 18px;
 }
 nav.menu .menu_scroll li img.icon1{
-	left: 15px;
-	width: 23px;
-	bottom: 12px;
+	width: 33px;
+	right: 20px;
+	top: 170px;
 }
 nav.menu .menu_scroll li.active{
 	background-color:#ddd;
-	border-radius: 30px 0 0 30px;
 }
 .mainmenupg{
 	height: 100%;
@@ -185,8 +195,31 @@ nav.menu .menu_scroll li.active{
 	transform: translateY(-50%);
 	font-size: 12px;
 }
-
-
+.toggleMenu{display: block;}
+.toggleMenu div{
+	width: 35px;
+	height: 5px;
+	background: #fff;
+	position: absolute;
+	border-radius:3px;
+	right:25px;
+}
+.toggleMenu .bar1{top:28px;}
+.toggleMenu .bar2{top:38px;}
+.toggleMenu .bar3{top:48px;}
+.change div.bar1{
+	right: 25px;
+	top: 50%;
+	transform:translateY(-50%) rotate(-45deg);
+}
+.change div.bar2{
+	opacity:0;
+}
+.change div.bar3{
+	right: 25px;
+	top: 50%;
+	transform:translateY(-50%) rotate(45deg);
+}
 
 /*SCROLL*/
 .scroll{
@@ -254,19 +287,19 @@ nav.menu .menu_scroll li.active{
 
 /*FOOTER*/
 .footer{
-	height: 200px;
+	height: 150px;
 	background: #303030;
 }
 .footer h4{
 	color:white;
-	font-size: 2.5em;
+	font-size: 2.0em;
 	position: absolute;
 	left: -28%;
 }
 .footer .footertxt{
 	width: 500px;
 	position: absolute;
-	top: 80px;
+	top: 50px;
 	left: 30%;
 }
 .footer .footertxt p{

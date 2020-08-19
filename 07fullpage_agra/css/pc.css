@@ -95,40 +95,45 @@
 	margin-bottom: 30px;
 	width: 200px;
 }
-/*LOGO*/
-.logo{
-	width: 100px;
-}
-.logo h2{
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 3em;
-	position: fixed;
-	z-index: 1;
-	color:white;
-	background-color:#303030;
-}
+
 
 
 /*MENU*/
+#header{
+	position: relative;
+}
+.headerWrap{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	background-color: #303030;
+	z-index: 2
+}
+.headerWrap .logo{
+	width: 103px !important;
+	position: absolute;
+	top:50% !important;
+	left: 50% !important;
+	transform: translate(-50%,-50%);
+}
 nav.menu{
-	width: 100px;
-	height: 200px;
-	background-color:#eee;
-	position: fixed;
-	right: 10px;
-	bottom: 50px;
-	z-index: 1;
-	border-radius: 30px 0 0 30px;
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: -100px;
 }
 nav.menu .menu_scroll{}
-nav.menu .menu_scroll li{}
+nav.menu .menu_scroll li{
+	float: left;
+	width: 120px;
+	text-align: center;
+}
 nav.menu .menu_scroll li a{
 	display: block;
-	line-height: 35px;
+	line-height: 40px;
 	text-align: center;
-	color:#303030;
+	color:white;
 	font-weight: bold;
 	font-size: 15px;
 }
@@ -138,17 +143,16 @@ nav.menu .menu_scroll li a:first-child{
 nav.menu .menu_scroll li img{
 	width: 35px;
 	position: absolute;
-	bottom: 20px;
-	right: 15px;
+	top: 28%;
+	right: 150px;
 }
 nav.menu .menu_scroll li img.icon1{
-	left: 15px;
 	width: 33px;
-	bottom: 22px;
+	right: 200px;
+	top: 30%;
 }
 nav.menu .menu_scroll li.active{
 	background-color:#ddd;
-	border-radius: 30px 0 0 30px;
 }
 .mainmenupg{
 	height: 100%;
@@ -179,6 +183,7 @@ nav.menu .menu_scroll li.active{
 	transform: translateY(-50%);
 	font-size: 20px;
 }
+.toggleMenu{display: none}
 
 
 
@@ -214,7 +219,6 @@ nav.menu .menu_scroll li.active{
 .slide li{
 	float: left;
 	width: 50%;
-	height: 266px;
 	text-align: center;
 	border: 1px solid #ddd;
 	padding: 20px;
@@ -226,7 +230,6 @@ nav.menu .menu_scroll li.active{
 .slide li:first-child{
 	width: 100%;
 	padding: 10px;
-	height: 49px;
 }
 .slide li:nth-child(2n){
 	border-right: 1px solid #ddd;
@@ -250,7 +253,7 @@ nav.menu .menu_scroll li.active{
 
 /*FOOTER*/
 .footer{
-	height: 200px;
+	height: 150px;
 	background: #303030;
 }
 .footer h4{
@@ -262,7 +265,7 @@ nav.menu .menu_scroll li.active{
 .footer .footertxt{
 	width: 800px;
 	position: absolute;
-	top: 80px;
+	top: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 }

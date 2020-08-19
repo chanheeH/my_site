@@ -18,6 +18,7 @@
 			//$(".slider").bxSlider({});
 			$(".fullpage").fullpage({
 				anchor:["a1st","a2st","a3st","a4st"],
+				menu:".menu_scroll",
 				navigation:true,
 				navigationPosition:'right',
 				afterLoad:function(anchorslink,index){
@@ -49,26 +50,57 @@
 						$(".agrainform").show();
 						$(".agrainform>div").hide().eq(i).show();
 					});
+					$(".toggleMenu").click(function(){
+				console.log($(this).attr("class"));
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$(".menu").stop().animate({right:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$(".menu").stop().animate({right:"-100%"},300);
+				}
+			});
+		});
+		$(window).resize(function(){
+			var wSize = $(window).width();
+			console.log(wSize);
+
+			if(wSize > 922){
+				$(".menu").css("top",0);
+				$(".toggleMenu").removeClass("change");
+			}else{
+				$(".menu").css("top","-100%");
+			}
 		});
 	</script>
 </head>
 <body>
-	<div class="logo">
-		<a href="#"><h2>AGRA</h2></a>
-	</div>
-	<nav class="menu">
-		<ul class="menu_scroll clearfix">
-			<li class="menu_name active"><a href="#a2st">HISTORY</a></li>
-			<li class="menu_name"><a href="#a3st">MENU</a></li>
-			<li class="menu_name"><a href="#a4st">LOCATION</a></li>
-			<li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="" class="icon1"></a></li>
-			<li><a href="https://www.instagram.com/agrafood/"><img src="images/instagram.png" alt="" class="icon2"></a></li>
-		</ul>
-	</nav>
+	<header id="header">
+		<div class="headerWrap">
+			<a href="#">
+				<img src="images/header_logo.png" alt="" class="logo">
+			</a>
+		<nav class="menu">
+			<ul class="menu_scroll clearfix">
+				<li class="menu_name active"><a href="#a4st">LOCATION</a></li>
+				<li class="menu_name"><a href="#a3st">MENU</a></li>
+				<li class="menu_name"><a href="#a2st">HISTORY</a></li>
+				<li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="" class="icon1"></a></li>
+				<li><a href="https://www.instagram.com/agrafood/"><img src="images/instagram.png" alt="" class="icon2"></a></li>
+			</ul>
+		</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+	</header>
 	<div class="fullpage">
 		<div class="section" id="first" data-anchor="a1st">
 			<video id="myVideo"  loop muted data-autoplay>
-				<source src="images/food1.mp4" type="video/mp4">
+				<source src="images/agra.mp4" type="video/mp4">
 			</video>
 			<div class="scroll">
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
@@ -182,7 +214,7 @@
 			<div class="footer clearfix">
 				<div class="footertxt">
 					<h4>AGRA</h4>
-					<p>AGRA 서울시 송파구 방이동 171-5 한양빌딩 402호 070.8299.2323 agrainfo@agra.co.kr</p>
+					<p>AGRA 서울시 송파구 방이동 171-5 한양빌딩 402호<br>070.8299.2323 agrainfo@agra.co.kr</p>
 					<p>대표: 김휘규 사업자등록번호: 314-86-45628</p>
 					<p>COPYRIGHT (C) 2015. AGRA, ALL RIGHTS RESERVED</p>
 				</div>
