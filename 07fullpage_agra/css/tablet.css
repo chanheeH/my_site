@@ -133,6 +133,7 @@ nav.menu{
 	background-color: #aaa;
 }
 nav.menu .menu_scroll{
+	width: 100%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -149,19 +150,16 @@ nav.menu .menu_scroll li a{
 	font-weight: bold;
 	font-size: 15px;
 }
-nav.menu .menu_scroll li a:first-child{
-	padding-top: 10px;
-}
-nav.menu .menu_scroll li img{
+nav.menu .sns li img{
 	width: 35px;
 	position: absolute;
-	top: 220px;
-	right: 18px;
+	bottom: 160px;
+	right: 30px;
 }
-nav.menu .menu_scroll li img.icon1{
+nav.menu .sns li img.icon1{
 	width: 33px;
-	right: 20px;
-	top: 170px;
+	right: 32px;
+	bottom: 125px;
 }
 nav.menu .menu_scroll li.active{
 	background-color:#ddd;
