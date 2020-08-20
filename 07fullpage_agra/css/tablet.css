@@ -3,7 +3,7 @@
 
 
 
-#first{background-image: url(../images/agra1.jpg);}
+
 #second{background-image: url(../images/agrabrand.png);}
 #third{background-image: url(../images/agra2.jpg);}
 #fourth{background-image: url(../images/agra4.jpg);}
@@ -238,6 +238,7 @@ nav.menu .menu_scroll li.active{
 .slide{
 	position: relative;
 }
+.placedetail{display: none;}
 .view{
 	position: absolute;
 	width: 60%;

@@ -225,11 +225,6 @@ nav.menu .menu_scroll li.active{
 	opacity: 0.9;
 	left:50%;top:50%;transform: translate(-50%,-50%);
 }
-.view1 li.three{
-	height: 236px;
-}
-
-
 .slide li{
 	float: left;
 	width: 50%;
@@ -240,6 +235,12 @@ nav.menu .menu_scroll li.active{
 	border-right: 0 none;
 	border-left: 0 none;
 	color:white;
+}
+.slide li.one,
+.slide li.two,
+.slide li.three,
+.slide li.four{
+	height: 236px;
 }
 .slide li:first-child{
 	width: 100%;
