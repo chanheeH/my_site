@@ -54,10 +54,10 @@
 
 /*BRAND*/
 #second h3{
-	top: 25%;
+	top: 20%;
 }
 .brandinform{
-	width: 500px;position: absolute;left: 50%;top:35%;transform: translateX(-50%);
+	width: 500px;position: absolute;left: 50%;top:30%;transform: translateX(-50%);
 	color:white;text-align: center;
 }
 .brandinform a{
@@ -75,15 +75,15 @@
 	color:#000;
 }
 .agrainform{
-	width: 400px;
+	width: 320px;
 	height: 300px;
 	position: absolute;
-	right: 50px;
-	bottom: -350px;
+	left: 90px;
+	bottom: -320px;
 	color:#303030;
 	background-color: #fff;
 	border-radius: 20px;
-	padding: 20px;
+	padding: 15px;
 }
 .agrainform h4{
 	font-size: 14px;
@@ -92,7 +92,7 @@
 }
 .agrainform h5{
 	font-size: 12px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .agrainform p{
 	font-size: 12px;
@@ -100,7 +100,7 @@
 }
 .agrainform img{
 	margin-bottom: 15px;
-	width: 100px;
+	width: 90px;
 }
 
 
