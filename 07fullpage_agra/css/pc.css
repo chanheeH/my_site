@@ -114,16 +114,18 @@
 	width: 103px !important;
 	position: absolute;
 	top:50% !important;
-	left: 50% !important;
-	transform: translate(-50%,-50%);
+	left: 40px !important;
+	transform: translateY(-50%);
 }
 nav.menu{
+	width: 620px;
+	height: 100%;
 	float: right;
-	position: absolute;
-	top: 10px;
-	right: -100px;
 }
-nav.menu .menu_scroll{}
+nav.menu .menu_scroll{
+	position: absolute;
+	top: 20px;
+}
 nav.menu .menu_scroll li{
 	float: left;
 	width: 120px;
@@ -131,28 +133,25 @@ nav.menu .menu_scroll li{
 }
 nav.menu .menu_scroll li a{
 	display: block;
-	line-height: 40px;
 	text-align: center;
 	color:white;
 	font-weight: bold;
 	font-size: 15px;
+	line-height: 40px;
 }
-nav.menu .menu_scroll li a:first-child{
-	padding-top: 10px;
-}
-nav.menu .menu_scroll li img{
+nav.menu .sns li img{
 	width: 35px;
 	position: absolute;
-	top: 28%;
-	right: 150px;
-}
-nav.menu .menu_scroll li img.icon1{
-	width: 33px;
-	right: 200px;
 	top: 30%;
+	right: 30px;
+}
+nav.menu .sns li img.icon1{
+	width: 33px;
+	right: 80px;
+	top: 31%;
 }
 nav.menu .menu_scroll li.active{
-	background-color:#ddd;
+	border-bottom: 3px solid #fff;
 }
 .mainmenupg{
 	height: 100%;
@@ -216,6 +215,21 @@ nav.menu .menu_scroll li.active{
 	opacity: 0.9;
 	left:50%;top:50%;transform: translate(-50%,-50%);
 }
+.view1{
+	position: absolute;
+	width: 800px;
+	border: 1px solid #ddd;
+	background: #303030;
+	border-right: 0 none;
+	border-left: 0 none;
+	opacity: 0.9;
+	left:50%;top:50%;transform: translate(-50%,-50%);
+}
+.view1 li.three{
+	height: 236px;
+}
+
+
 .slide li{
 	float: left;
 	width: 50%;

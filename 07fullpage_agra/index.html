@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(function(){
-			//$(".slider").bxSlider({});
+			$(".placedetail").hide();
 			$(".fullpage").fullpage({
 				anchor:["a1st","a2st","a3st","a4st"],
 				menu:".menu_scroll",
@@ -23,34 +23,43 @@
 				navigationPosition:'right',
 				afterLoad:function(anchorslink,index){
 					console.log(anchorslink+", "+index);
-					if(index == 2){
-						$("#onViewTwo").addClass("move");
-					}else{
-						$("#onViewTwo").removeClass("move");
-					}
 				}
 			});
-				$(".menu_scroll>li.menu_name").click(function(){
-				$(".menu_scroll>li.menu_name").removeClass("active");
-				$(this).addClass("active");
+
+
+			$(".menu_scroll>li.menu_name").click(function(){
+			$(".menu_scroll>li.menu_name").removeClass("active");
+			$(this).addClass("active");
 			});
-				$(".locate").colorbox({
-				iframe:true,
-				innerWidth:604,
-				innerHeight:454
+
+
+
+			$(".locate").colorbox({
+			iframe:true,
+			innerWidth:604,
+			innerHeight:454
 			});
-				$(".menudetail").colorbox({
-				iframe:true,
-				innerWidth:"75%",
-				innerHeight:"60%"
+
+
+
+			$(".menudetail").colorbox({
+			iframe:true,
+			innerWidth:"75%",
+			innerHeight:"60%"
 			});
-				$(".agrainform").hide();
-					$(".brandinform>ul>li").click(function(){
-						var i = $(this).index();
-						$(".agrainform").show();
-						$(".agrainform>div").hide().eq(i).show();
-					});
-					$(".toggleMenu").click(function(){
+
+
+
+			$(".agrainform").hide();
+				$(".brandinform>ul>li").click(function(){
+					var i = $(this).index();
+					$(".agrainform").show();
+					$(".agrainform>div").hide().eq(i).show();
+				});
+
+
+
+			$(".toggleMenu").click(function(){
 				console.log($(this).attr("class"));
 				var toggle = $(this).attr("class");
 				if(toggle == "toggleMenu"){
@@ -62,15 +71,36 @@
 				}
 			});
 		});
+
+
+
 		$(window).resize(function(){
 			var wSize = $(window).width();
 			console.log(wSize);
 
 			if(wSize > 922){
-				$(".menu").css("top",0);
+				// menu
+				$(".menu").css("right",0);
 				$(".toggleMenu").removeClass("change");
+
+				// placedetail
+				$(".placedetail").show();
 			}else{
-				$(".menu").css("top","-100%");
+				// menu
+				$(".menu").css("right","-100%");
+
+				// placedetail
+				$(".placedetail").hide();
+		         	$(".view li").click(function(){
+		          	  	var i = $(this).index();
+		           		$(".view li").find(".placedetail").stop().slideUp();
+		           	 	$(".view li").eq(i).find(".placedetail").stop().slideDown();
+		    		});
+		    		$(".view1 li").click(function(){
+		          	  	var i = $(this).index();
+		           		$(".view1 li").find(".placedetail").stop().slideUp();
+		           	 	$(".view1 li").eq(i).find(".placedetail").stop().slideDown();
+		    		});
 			}
 		});
 	</script>
@@ -81,18 +111,18 @@
 			<a href="#">
 				<img src="images/header_logo.png" alt="" class="logo">
 			</a>
-		<nav class="menu">
-			<ul class="menu_scroll clearfix">
-				<li class="menu_name" data-menuanchor="a1st"><a href="#a1st">HOME</a></li>
-				<li class="menu_name" data-menuanchor="a2st"><a href="#a2st">HISTORY</a></li>
-				<li class="menu_name" data-menuanchor="a3st"><a href="#a3st">MENU</a></li>
-				<li class="menu_name" data-menuanchor="a4st"><a href="#a4st">LOCATION</a></li>
-			</ul>
-			<ul class="sns">
-				<li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="" class="icon1"></a></li>
-				<li><a href="https://www.instagram.com/agrafood/"><img src="images/instagram.png" alt="" class="icon2"></a></li>
-			</ul>
-		</nav>
+			<nav class="menu">
+				<ul class="menu_scroll clearfix">
+					<li class="menu_name" data-menuanchor="a1st"><a href="#a1st">HOME</a></li>
+					<li class="menu_name" data-menuanchor="a2st"><a href="#a2st">HISTORY</a></li>
+					<li class="menu_name" data-menuanchor="a3st"><a href="#a3st">MENU</a></li>
+					<li class="menu_name" data-menuanchor="a4st"><a href="#a4st">LOCATION</a></li>
+				</ul>
+				<ul class="sns">
+					<li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="" class="icon1"></a></li>
+					<li><a href="https://www.instagram.com/agrafood/"><img src="images/instagram.png" alt="" class="icon2"></a></li>
+				</ul>
+			</nav>
 			<div class="toggleMenu">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
@@ -155,58 +185,74 @@
 					<ul>
 						<li class="place"><h2>아그라 시트론</h2></li>
 						<li class="one">
+							<h4>잠실 에비뉴엘점</h4>
 							<a href="map01.html" class="locate">
-								<h4>잠실 에비뉴엘점</h4>
-								<p>서울시 송파구 올림픽로 300<br>롯데백화점 에비뉴엘 월드타워점 6F<br><span class="bold fsz12">02-3213-2633</span><br>평일 11:30~22:00 백화점정기무휴<br>주말 11:30~15:00 주말런치</p>
+								<div class="placedetail">
+									<p>서울시 송파구 올림픽로 300<br>롯데백화점 에비뉴엘 월드타워점 6F<br><span class="bold fsz12">02-3213-2633</span><br>평일 11:30~22:00 백화점정기무휴<br>주말 11:30~15:00 주말런치</p>
+								</div>
 							</a>
 						</li>
 						<li class="two">
+							<h4>종로점</h4>
 							<a href="map02.html" class="locate">
-								<h4>종로점</h4>
-								<p>서울시 중구 을지로 5길 26<br>미래에셋빌딩 B2F<br><span class="bold fsz12">02-6030-8977</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치</p>
+								<div class="placedetail">
+									<p>서울시 중구 을지로 5길 26<br>미래에셋빌딩 B2F<br><span class="bold fsz12">02-6030-8977</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치</p>
+								</div>
 							</a>
 						</li>
 						<li class="three">
+							<h4>서래마을점</h4>
 							<a href="map03.html" class="locate">
-								<h4>서래마을점</h4>
-								<p>서울시 서초구 서래로 13<br>일진빌딩 2F<br><span class="bold fsz12">070-4194-4320</span><br>평일 11:30~22:00 연중무휴<br>평일 15:00~17:00 브레이크 타임<br>주말 11:30~15:00 주말런치</p>
+								<div class="placedetail">
+									<p>서울시 서초구 서래로 13<br>일진빌딩 2F<br><span class="bold fsz12">070-4194-4320</span><br>평일 11:30~22:00 연중무휴<br>평일 15:00~17:00 브레이크 타임<br>주말 11:30~15:00 주말런치</p>
+								</div>
 							</a>
 						</li>
 						<li class="four">
+							<h4>이태원점</h4>
 							<a href="map04.html" class="locate">
-								<h4>이태원점</h4>
-								<p>서울시 용산구 이태원로 153<br>덕흥빌딩 B1F<br><span class="bold fsz12">070-8230-4320</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치<br>주말 11:30~23:00 금요일/토요일</p>
+								<div class="placedetail">
+									<p>서울시 용산구 이태원로 153<br>덕흥빌딩 B1F<br><span class="bold fsz12">070-8230-4320</span><br>평일 11:30~22:00 연중무휴<br>주말 11:30~15:00 주말런치<br>주말 11:30~23:00 금요일/토요일</p>
+								</div>
 							</a>
 						</li>
 					</ul>
 				</div> <!-- view -->
 			</div> <!-- slide -->
 			<div class="slide">
-				<div class="view">
+				<div class="view1">
 					<ul class="clearfix">
 						<li class="place"><h2>아그라 어반 스파이스</h2></li>
 						<li class="one">
+							<h4>롯데몰 은평점</h4>
 							<a href="map05.html" class="locate">
-								<h4>롯데몰 은평점</h4>
-								<p>서울시 은평구 진관동 79-15<br>롯데몰 은평뉴타운점 B1F<br><span class="bold fsz12">02-6975-5067</span><br>매일 10:30~22:00<br>휴무일 : 롯데몰 정기휴무</p>
+								<div class="placedetail">
+									<p>서울시 은평구 진관동 79-15<br>롯데몰 은평뉴타운점 B1F<br><span class="bold fsz12">02-6975-5067</span><br>매일 10:30~22:00<br>휴무일 : 롯데몰 정기휴무</p>
+								</div>
 							</a>
 						</li>
 						<li class="two">
+							<h4>롯데피트인 산본점</h4>
 							<a href="map06.html" class="locate">
-								<h4>롯데피트인 산본점</h4>
-								<p>경기도 군포시 번영로 485<br>롯데피트인 9F<br><span class="bold fsz12">031-8033-1470</span><br>매일 10:30~22:00<br>휴무일 : 연중무휴</p>
+								<div class="placedetail">
+									<p>경기도 군포시 번영로 485<br>롯데피트인 9F<br><span class="bold fsz12">031-8033-1470</span><br>매일 10:30~22:00<br>휴무일 : 연중무휴</p>
+								</div>
 							</a>
 						</li>
 						<li class="three">
+							<h4>코엑스점</h4>
 							<a href="map07.html" class="locate">
-								<h4>코엑스점</h4>
-								<p>서울시 강남구 영동대로 513<br>코엑스 B1F 아이 102호<br><span class="bold fsz12">070-8802-4320</span><br>매일 11:00~22:00<br></p>
+								<div class="placedetail">
+									<p>서울시 강남구 영동대로 513<br>코엑스 B1F 아이 102호<br><span class="bold fsz12">070-8802-4320</span><br>매일 11:00~22:00<br></p>
+								</div>
 							</a>
 						</li>
 						<li class="four">
+							<h4>잠실 롯데백화점</h4>
 							<a href="map08.html" class="locate">
-								<h4>잠실 롯데백화점</h4>
-								<p>서울시 송파구 올림픽로 240<br>롯데백화점 11F<br><span class="bold fsz12">070-8820-4320</span><br>매일 10:30~22:00<br>휴무일 : 백화점 정기휴무</p>
+								<div class="placedetail">
+									<p>서울시 송파구 올림픽로 240<br>롯데백화점 11F<br><span class="bold fsz12">070-8820-4320</span><br>매일 10:30~22:00<br>휴무일 : 백화점 정기휴무</p>
+								</div>
 							</a>
 						</li>
 					</ul>
