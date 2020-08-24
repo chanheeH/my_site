@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AGRA MENU_CURRY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".menu_scroll>li.menu_name").click(function(){
+			$(".menu_scroll>li.menu_name").removeClass("active");
+			$(this).addClass("active");
+			});
+
+
+			$(".toggleMenu").click(function(){
+				console.log($(this).attr("class"));
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$(".menu").stop().animate({right:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$(".menu").stop().animate({right:"-100%"},300);
+				}
+			});
+
+
+			$(window).resize(function(){
+			var wSize = $(window).width();
+			console.log(wSize);
+
+			if(wSize > 922){
+				// menu
+				$(".menu").css("right",0);
+				$(".toggleMenu").removeClass("change");
+
+			}else{
+				// menu
+				$(".menu").css("right","-100%");
+			}
+			});
+		});
+	</script>
+</head>
+<body >
+	<header id="header">
+		<div class="headerWrap">
+			<a href="#">
+				<img src="../images/header_logo.png" alt="" class="logo">
+			</a>
+			<nav class="menu" >
+				<ul class="menu_scroll clearfix">
+					<li class="menu_name" data-menuanchor="a1st"><a href="../index.html#a1st">HOME</a></li>
+					<li class="menu_name" data-menuanchor="a2st"><a href="../index.html#a2st">HISTORY</a></li>
+					<li class="menu_name" data-menuanchor="a3st"><a href="#">MENU</a></li>
+					<li class="menu_name" data-menuanchor="a4st"><a href="../index.html#a4st">LOCATION</a></li>
+				</ul>
+				<ul class="sns">
+					<li><a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="" class="icon1"></a></li>
+					<li><a href="https://www.instagram.com/agrafood/"><img src="../images/instagram.png" alt="" class="icon2"></a></li>
+				</ul>
+			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+	</header>
+	
+
+		<div  class="topBlank"></div>
+	
+		<div class="menu_category">
+			<ul class="clearfix">
+				<li class="active"><a href="curry.html">CURRY</a></li>
+				<li><a href="naan.html">NAAN</a></li>
+				<li><a href="#">BREAD</a></li>
+				<li><a href="#">TANDOORI</a></li>
+				<li><a href="#">LASSI</a></li>
+				<li><a href="#">SET</a></li>
+			</ul>
+		</div>
+	
+	<div class="category_wrap">
+		<div class="curry_wrap">
+			<div class="curry1">
+				<img src="../images/curry/makhani.png" alt="">
+				<div class="menu_click">
+					<h3>MAKHANI</h3>
+					<P class="bold mb5">Mild flavored curry with cream sauce, fresh tomato and onions</P>
+					<p class="fsz14 fc52">크림소스를 첨가한 부드러운 커리</p>
+				</div>
+				<div class="menu_intro">
+					<ul class="clearfix">
+						<li>· Butter Chicken<br>버터치킨 마크니</li>
+						<li>· Lamb<br>램 마크니</li>
+						<li>· Panner Butter Masala<br>빠니르 버터 마살라</li>
+						<li>· Cheese Chicken<br>치즈 치킨 마크니</li>
+						<li>· Prawn<br>프라운 마크니</li>
+						<li>· Chicken Tikka Masala<br>치킨 띠까 마살라</li>
+					</ul>
+				</div> <!-- menu_intro -->
+			</div> <!-- curry1 -->
+			<div class="curry2">
+				<img src="../images/curry/palak.png" alt="">
+				<div class="menu_click">
+					<h3>PALAK</h3>
+					<P class="bold mb5">With finely chopped spinach, herb and spices</P>
+					<p class="fsz14 fc52">시금치와 향신료로 만든 커리</p>
+				</div>
+					<div class="menu_intro">
+					<ul>
+						<li>· Palak Panner<br>빨락 빠니르</li>
+						<li>· Prawn Palak<br>프라운 빨락</li>
+						<li>· Chicken Palak<br>치킨 빨락</li>
+						<li>· Botti Palak<br>보띠 빨락</li>
+					</ul>
+				</div> <!-- menu_intro -->
+			</div> <!-- curry2 -->
+			<div class="curry3">
+				<img src="../images/curry/vindaloo.png" alt="">
+				<div class="menu_click">
+					<h3>VINDALOO</h3>
+					<P class="bold mb5">Curry with tomato, onion, potato and spicy sauce</P>
+					<p class="fsz14 fc52">토마토와 양파 감자 등을 넣어 만든 매운 커리</p>
+				</div>
+				<div class="menu_intro">
+					<ul>
+						<li>· Lamb Vindaloo<br>램 빈달루</li>
+						<li>· Chicken Vindaloo<br>치킨 빈달루</li>
+					</ul>
+				</div> <!-- menu_intro -->
+			</div> <!-- curry3 -->
+		</div> <!-- curry_wrap -->
+	</div> <!-- category_wrap -->
+	<div class="section fp-auto-height" data-anchor="a5st">
+			<div class="footer clearfix">
+				<div class="footertxt">
+					<h4>AGRA</h4>
+					<p>AGRA 서울시 송파구 방이동 171-5 한양빌딩 402호<br>070.8299.2323 agrainfo@agra.co.kr</p>
+					<p>대표: 김휘규 사업자등록번호: 314-86-45628</p>
+					<p>COPYRIGHT (C) 2015. AGRA, ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

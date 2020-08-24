@@ -108,6 +108,8 @@
 /*MENU*/
 #header{
 	position: relative;
+	width: 100%;
+	height: 80px;
 }
 .headerWrap{
 	width: 100%;
@@ -299,13 +301,13 @@ nav.menu .menu_scroll li.active{
 	color:white;
 	font-size: 2.0em;
 	position: absolute;
-	left: -28%;
+	left: -40%;
 }
 .footer .footertxt{
-	width: 500px;
+	width: 60%;
 	position: absolute;
 	top: 50px;
-	left: 30%;
+	left: 35%;
 }
 .footer .footertxt p{
 	color:#eee;
@@ -316,3 +318,87 @@ nav.menu .menu_scroll li.active{
 .bold{font-weight: bold;}
 .fsz16{font-size: 16px;}
 .fsz12{font-size: 12px}
+
+
+/*menusub*/
+.menu_category{
+	width: 100%;
+	background-color: #bbb;
+}
+.menu_category ul{
+	width: 100%;
+	margin: 0 auto;
+}
+.menu_category ul li{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	border: 1px solid #ccc;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.menu_category ul li a{
+	display: block;
+}
+.category_wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*curry*/
+.curry_wrap{}
+.curry1,.curry2,.curry3{
+	width: 100%;
+	margin: 0 auto;
+	height: 520px;
+	position: relative;
+}
+.curry1,.curry2{
+	border-bottom: 1px solid #ccc;
+}
+.curry_wrap img{
+	bottom: 0px;
+	left: 30px;
+	position: absolute;
+	width: 100%;
+}
+.curry_wrap .menu_intro{
+	width: 100%;
+	position: absolute;
+	top: 50px;
+}
+.menu_click{
+	position: absolute;
+	width: 100%;
+	top: 40px;
+}
+.curry_wrap h3{
+	color:#bf8f49;
+	margin-bottom: 5px;
+}
+.curry_wrap p{
+	color:#303030;
+}
+.curry_wrap .menu_intro ul{
+	position: absolute;
+	left:0px;
+	top: 100px;
+}
+.curry_wrap .menu_intro li{
+	width: 33.3333%;
+	float: left;
+	color:#303030;
+	font-size: 12px;
+	text-align: left;
+	margin-bottom: 20px;
+	color:#555555;
+}
+.curry_wrap .curry3 .menu_intro li{
+	width: 200px;
+}
+.menu_category ul li.active{
+	background-color: #a79f93;
+}
+
+/*naan*/

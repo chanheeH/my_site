@@ -101,6 +101,7 @@
 /*MENU*/
 #header{
 	position: relative;
+	height:80px;
 }
 .headerWrap{
 	width: 100%;
@@ -240,7 +241,7 @@ nav.menu .menu_scroll li.active{
 .slide li.two,
 .slide li.three,
 .slide li.four{
-	height: 236px;
+	height: 255px;
 }
 .slide li:first-child{
 	width: 100%;
@@ -268,17 +269,20 @@ nav.menu .menu_scroll li.active{
 
 /*FOOTER*/
 .footer{
+	width: 100%;
 	height: 150px;
+	position: relative;
 	background: #303030;
 }
 .footer h4{
 	color:white;
 	font-size: 2.5em;
 	position: absolute;
-	left: -200px;
+	left: -185px;
+	top: 0;
 }
 .footer .footertxt{
-	width: 800px;
+	width: 400px;
 	position: absolute;
 	top: 50px;
 	left: 50%;
@@ -292,3 +296,183 @@ nav.menu .menu_scroll li.active{
 /*SPAN*/
 .bold{font-weight: bold;}
 .fsz16{font-size: 16px;}
+.mb10{margin-bottom: 10px;}
+.fsz14{font-size: 14px}
+.mb5{margin-bottom: 5px;}
+.fc52{color:#525252 !important;}
+.mb25{margin-bottom: 25px;}
+.mb15{margin-bottom: 15px;}
+.pb10{padding-bottom: 10px;}
+
+/*menusub*/
+.menu_category{
+	background-color: #bbb;
+}
+.menu_category ul{
+	width: 900px;
+	margin: 0 auto;
+}
+.menu_category ul li{
+	float: left;
+	width: 150px;
+	text-align: center;
+	border: 1px solid #ccc;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.menu_category ul li a{
+	display: block;
+}
+.category_wrap{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/*curry*/
+
+.curry1{
+	width: 900px;
+	margin:0 auto;
+}
+.curry_wrap{}
+.curry1,.curry2,.curry3{
+	width: 900px;
+	margin: 0 auto;
+	height: 420px;
+	position: relative;
+}
+.curry1,.curry2{
+	border-bottom: 1px solid #ccc;
+}
+.curry_wrap .curry1 img,
+.curry_wrap .curry3 img{
+	bottom: 0px;
+	left: 10px;
+	position: absolute;
+	width: 380px;
+	
+}
+.curry_wrap .curry2 img{
+	right: 10px;
+	bottom: 0;
+	position: absolute;
+	width: 380px;
+}
+.curry_wrap .curry1 .menu_intro{
+	width: 490px;
+	position: absolute;
+	right: -5px;
+	top: 80px;
+}
+.curry_wrap .curry3 .menu_intro{
+	width: 350px;
+	position: absolute;
+	right: 120px;
+	top: 80px;
+}
+.curry_wrap .curry2 .menu_intro{
+	width: 350px;
+	position: absolute;
+	left: 0px;
+	top: 80px;
+}
+.curry1 .menu_click{
+	position: absolute;
+	top: 80px;
+	right: 0px;
+}
+.curry3 .menu_click{
+	position: absolute;
+	top: 80px;
+	right: 90px;
+}
+.curry2 .menu_click{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	text-align: right;
+}
+.curry_wrap h3{
+	color:#bf8f49;
+	margin-bottom: 5px;
+}
+.curry_wrap p{
+	color:#303030;
+}
+.curry_wrap .curry1 .menu_intro ul,
+.curry_wrap .curry3 .menu_intro ul{
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	text-align:left;
+}
+.curry_wrap .curry2 .menu_intro ul{
+	position: absolute;
+	right: 0px;
+	top: 100px;
+}
+.curry_wrap .curry1 .menu_intro li{
+	width: 220px;
+	float: left;
+	color:#303030;
+	font-size: 14px;
+	text-align: left;
+	color:#555555;
+	margin-bottom: 30px;
+}
+.curry_wrap .curry3 .menu_intro li{
+	width: 175px;
+	float: left;
+	color:#303030;
+	font-size: 14px;
+	text-align: left;
+	color:#555555;
+	margin-bottom: 30px;
+}
+.curry_wrap .curry2 .menu_intro li{
+	width: 175px;
+	float: left;
+	color:#303030;
+	font-size: 14px;
+	text-align: right;
+	color:#555555;
+	margin-bottom: 30px;
+}
+.menu_category ul li.active{
+	background-color: #a79f93;
+}
+
+/*naan*/
+.naan_wrap{
+	width: 900px;
+	height: 707px;
+	background: #f00;
+	margin: 0 auto;
+	position: relative;
+}
+.naan1{
+	width: 450px;
+	height: 420px;
+	background-color:skyblue;
+	position: absolute;
+	left: 0;
+}
+.naan2{
+	width: 450px;
+	height: 600px;
+	background-color:skyblue;
+	position: absolute;
+	right: 0;
+}
+.naan3{
+	width: 450px;
+	height: 300px;
+	background-color:skyblue;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.naan_wrap img{
+	width: 400px;
+}
