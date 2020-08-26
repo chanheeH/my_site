@@ -117,6 +117,7 @@
 	top:50% !important;
 	left: 40px !important;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 nav.menu{
 	width: 620px;
@@ -330,11 +331,6 @@ nav.menu .menu_scroll li.active{
 }
 
 /*curry*/
-
-.curry1{
-	width: 900px;
-	margin:0 auto;
-}
 .curry_wrap{}
 .curry1,.curry2,.curry3{
 	width: 900px;
@@ -351,7 +347,6 @@ nav.menu .menu_scroll li.active{
 	left: 10px;
 	position: absolute;
 	width: 380px;
-	
 }
 .curry_wrap .curry2 img{
 	right: 10px;
@@ -393,8 +388,23 @@ nav.menu .menu_scroll li.active{
 	left: 0px;
 	text-align: right;
 }
+.curry_wrap .curry_intro{
+	width: 900px;
+	margin: 0 auto;
+	background-color: #da4f0b;
+	text-align: center;
+}
+.curry_wrap .curry_intro h3{
+	font-size: 2.5em;
+	color:#303030;
+	padding-top: 10px;
+}
+.curry_wrap .curry_intro p{
+	font-size: 18px;
+	color:#303030;
+}
 .curry_wrap h3{
-	color:#bf8f49;
+	color:#da4f0b;
 	margin-bottom: 5px;
 }
 .curry_wrap p{
@@ -418,7 +428,6 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 	font-size: 14px;
 	text-align: left;
-	color:#555555;
 	margin-bottom: 30px;
 }
 .curry_wrap .curry3 .menu_intro li{
@@ -427,7 +436,6 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 	font-size: 14px;
 	text-align: left;
-	color:#555555;
 	margin-bottom: 30px;
 }
 .curry_wrap .curry2 .menu_intro li{
@@ -436,7 +444,6 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 	font-size: 14px;
 	text-align: right;
-	color:#555555;
 	margin-bottom: 30px;
 }
 .menu_category ul li.active{
@@ -446,33 +453,64 @@ nav.menu .menu_scroll li.active{
 /*naan*/
 .naan_wrap{
 	width: 900px;
-	height: 707px;
-	background: #f00;
+	height: 566px;
 	margin: 0 auto;
 	position: relative;
 }
+.naan_wrap .naan_intro{
+	width: 900px;
+	margin: 0 auto;
+	background-color: #bf8f49;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.naan_wrap .naan_intro h3{
+	font-size: 2.5em;
+	color:#303030;
+	padding-top: 10px;
+}
+.naan_wrap .naan_intro p{
+	font-size: 18px;
+	color:#303030;
+}
 .naan1{
 	width: 450px;
-	height: 420px;
-	background-color:skyblue;
+	height: 228px;
 	position: absolute;
 	left: 0;
+	border: 1px solid #ddd;
 }
 .naan2{
 	width: 450px;
-	height: 600px;
-	background-color:skyblue;
+	height: 456px;
 	position: absolute;
 	right: 0;
+	border: 1px solid #ddd;
 }
 .naan3{
 	width: 450px;
-	height: 300px;
-	background-color:skyblue;
+	height: 228px;
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	border: 1px solid #ddd;
 }
 .naan_wrap img{
-	width: 400px;
+	width: 450px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.naan_wrap .menu_click01{
+	font-size: 18px;
+	color:#bf8f49;
+	padding: 15px;
+	z-index: 1;
+	position: relative;
+}
+.naan_wrap .menu_intro01{
+	font-size: 12px;
+	padding-left: 15px;
+	z-index: 1;
+	position: relative;
 }
