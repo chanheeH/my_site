@@ -100,8 +100,10 @@
 
 /*MENU*/
 #header{
-	position: relative;
+	position: fixed;
+	width: 100%;
 	height:80px;
+	z-index: 999;
 }
 .headerWrap{
 	width: 100%;
@@ -109,7 +111,6 @@
 	position: absolute;
 	top: 0;
 	background-color: #303030;
-	z-index: 2
 }
 .headerWrap .logo{
 	width: 103px !important;
@@ -176,6 +177,10 @@ nav.menu .menu_scroll li.active{
 }
 .menudetailpg ul li img{
 	width:100%;
+}
+.menudetailpg img:hover{
+	transform: translate(10%,5%) scale(1.2);
+	transition: 0.5s
 }
 .menudetailpg ul li h4{
 	position: absolute;
@@ -304,6 +309,9 @@ nav.menu .menu_scroll li.active{
 .mb25{margin-bottom: 25px;}
 .mb15{margin-bottom: 15px;}
 .pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+
 
 /*menusub*/
 .menu_category{
@@ -337,9 +345,16 @@ nav.menu .menu_scroll li.active{
 	margin: 0 auto;
 	height: 420px;
 	position: relative;
+	overflow: hidden;
 }
 .curry1,.curry2{
 	border-bottom: 1px solid #ccc;
+}
+.curry1 img:hover,
+.curry2 img:hover,
+.curry3 img:hover{
+	transform: translate(0%,-0%) scale(1.1);
+	transition: 0.3s
 }
 .curry_wrap .curry1 img,
 .curry_wrap .curry3 img{
@@ -391,7 +406,7 @@ nav.menu .menu_scroll li.active{
 .curry_wrap .curry_intro{
 	width: 900px;
 	margin: 0 auto;
-	background-color: #da4f0b;
+	background-color: #F28705;
 	text-align: center;
 }
 .curry_wrap .curry_intro h3{
@@ -404,7 +419,7 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 }
 .curry_wrap h3{
-	color:#da4f0b;
+	color:#F28705;
 	margin-bottom: 5px;
 }
 .curry_wrap p{
@@ -453,7 +468,7 @@ nav.menu .menu_scroll li.active{
 /*naan*/
 .naan_wrap{
 	width: 900px;
-	height: 566px;
+	height: 707px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -463,6 +478,7 @@ nav.menu .menu_scroll li.active{
 	background-color: #bf8f49;
 	text-align: center;
 	padding-bottom: 10px;
+	margin-bottom: 50px;
 }
 .naan_wrap .naan_intro h3{
 	font-size: 2.5em;
@@ -475,28 +491,41 @@ nav.menu .menu_scroll li.active{
 }
 .naan1{
 	width: 450px;
-	height: 228px;
+	height: 265px;
 	position: absolute;
 	left: 0;
-	border: 1px solid #ddd;
+	bottom: 265px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	overflow:hidden;
+}
+.naan1 img:hover,
+.naan2 img:hover,
+.naan3 img:hover{
+	transform: translate(0%,0%) scale(1.1);
+	transition: 0.3s
 }
 .naan2{
 	width: 450px;
-	height: 456px;
+	height: 530px;
 	position: absolute;
 	right: 0;
-	border: 1px solid #ddd;
+	bottom: 0;
+	border-right: 1px solid #ddd;
+	overflow:hidden;
 }
 .naan3{
 	width: 450px;
-	height: 228px;
+	height: 265px;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	border: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	overflow:hidden;
 }
 .naan_wrap img{
-	width: 450px;
+	width: 445px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
