@@ -321,6 +321,9 @@ nav.menu .menu_scroll li.active{
 .fsz12{font-size: 12px}
 
 
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
 /*menusub*/
 .menu_category{
 	width: 100%;
@@ -346,6 +349,10 @@ nav.menu .menu_scroll li.active{
 	width: 80%;
 	margin: 0 auto;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
 
 /*curry*/
 .curry_wrap{}
@@ -388,11 +395,11 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 }
 .curry_wrap .curry_intro p:nth-child(3){
-	border-bottom: 4px solid #da4f0b;
+	border-bottom: 4px solid #f2c305;
 	padding-bottom: 20px;
 }
 .curry_wrap h3{
-	color:#da4f0b;
+	color:#f2c305;
 	margin-bottom: 5px;
 }
 .curry_wrap p{
@@ -406,7 +413,7 @@ nav.menu .menu_scroll li.active{
 .curry_wrap .menu_intro li{
 	width: 33.3333%;
 	float: left;
-	color:#303030;
+	color: #676767;
 	font-size: 12px;
 	text-align: left;
 	margin-bottom: 20px;
@@ -414,14 +421,18 @@ nav.menu .menu_scroll li.active{
 .curry_wrap .curry3 .menu_intro li{
 	width: 200px;
 }
-.menu_category ul li.active{
+.menu_category ul li.active1{
 	background-color: #a79f93;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
 
 /*naan*/
 .naan_wrap{
 	width: 100%;
-	height: 890px;
+	height: 950px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -448,7 +459,7 @@ nav.menu .menu_scroll li.active{
 }
 .naan1, .naan2, .naan3{
 	width:100%;	
-	height: 250px;
+	height: 268px;
 	border-bottom: 1px solid #ddd;
 	position: relative;
 }
@@ -470,7 +481,65 @@ nav.menu .menu_scroll li.active{
 	z-index: 1;
 	position: absolute;
 	top: 50px;
+	color: #676767;
 }
 .naan_wrap .menu_intro01 li{
 	padding-bottom: 10px;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*bread*/
+.bread_wrap .bread_intro{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.bread_wrap .bread_intro h3{
+	font-size: 2.0em;
+	color:#303030;
+	padding-top: 20px;
+	margin-bottom: 5px;
+}
+.bread_wrap .bread_intro p{
+	font-size: 14px;
+	color:#303030;
+}
+.bread_wrap .bread_intro p:nth-child(3){
+	border-bottom: 4px solid #a7b833;
+	padding-bottom: 20px;
+}
+.bread1,.bread2,.bread3{
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	height: 350px;
+}
+.bread_wrap img{
+	width: 57%;
+	position: absolute;
+	bottom: 7%;
+	left: 13%;
+}
+.bread_wrap .menu_click02{
+	font-size: 18px;
+	color:#a7b833;
+	padding: 15px 0 15px 0;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+.bread_wrap .menu_intro02{
+	font-size: 12px;
+	z-index: 1;
+	position: absolute;
+	top: 50px;
+	color: #676767;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*tandoori*/

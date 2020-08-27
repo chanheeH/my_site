@@ -299,11 +299,12 @@ nav.menu .menu_scroll li.active{
 	font-size: 14px;
 }
 
+
 /*SPAN*/
 .bold{font-weight: bold;}
 .fsz16{font-size: 16px;}
 .mb10{margin-bottom: 10px;}
-.fsz14{font-size: 14px}
+.fsz14{font-size: 14px !important;}
 .mb5{margin-bottom: 5px;}
 .fc52{color:#525252 !important;}
 .mb25{margin-bottom: 25px;}
@@ -311,6 +312,10 @@ nav.menu .menu_scroll li.active{
 .pb10{padding-bottom: 10px;}
 .pb15{padding-bottom: 15px;}
 .pb20{padding-bottom: 20px;}
+.pb5{padding-bottom: 5px;}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 
 
 /*menusub*/
@@ -337,6 +342,10 @@ nav.menu .menu_scroll li.active{
 	max-width: 1400px;
 	margin: 0 auto;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
 
 /*curry*/
 .curry_wrap{}
@@ -406,7 +415,7 @@ nav.menu .menu_scroll li.active{
 .curry_wrap .curry_intro{
 	width: 900px;
 	margin: 0 auto;
-	background-color: #F28705;
+	background-color: #f2c305;
 	text-align: center;
 }
 .curry_wrap .curry_intro h3{
@@ -419,11 +428,13 @@ nav.menu .menu_scroll li.active{
 	color:#303030;
 }
 .curry_wrap h3{
-	color:#F28705;
+	color:#f2c305;
 	margin-bottom: 5px;
+	font-size: 18px;
 }
 .curry_wrap p{
 	color:#303030;
+	font-size: 16px;
 }
 .curry_wrap .curry1 .menu_intro ul,
 .curry_wrap .curry3 .menu_intro ul{
@@ -440,30 +451,34 @@ nav.menu .menu_scroll li.active{
 .curry_wrap .curry1 .menu_intro li{
 	width: 220px;
 	float: left;
-	color:#303030;
-	font-size: 14px;
+	color:#676767;
+	font-size: 12px;
 	text-align: left;
 	margin-bottom: 30px;
 }
 .curry_wrap .curry3 .menu_intro li{
 	width: 175px;
 	float: left;
-	color:#303030;
-	font-size: 14px;
+	color:#676767;
+	font-size: 12px;
 	text-align: left;
 	margin-bottom: 30px;
 }
 .curry_wrap .curry2 .menu_intro li{
 	width: 175px;
 	float: left;
-	color:#303030;
-	font-size: 14px;
+	color:#676767;
+	font-size: 12px;
 	text-align: right;
 	margin-bottom: 30px;
 }
-.menu_category ul li.active{
+.menu_category ul li.active1{
 	background-color: #a79f93;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
 
 /*naan*/
 .naan_wrap{
@@ -524,6 +539,11 @@ nav.menu .menu_scroll li.active{
 	border-right: 1px solid #ddd;
 	overflow:hidden;
 }
+.naan1 li,
+.naan3 li{
+	float: left;
+	margin-right: 20px;
+}
 .naan_wrap img{
 	width: 445px;
 	position: absolute;
@@ -542,4 +562,96 @@ nav.menu .menu_scroll li.active{
 	padding-left: 15px;
 	z-index: 1;
 	position: relative;
+	color:#676767;
 }
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*bread*/
+.bread_wrap{}
+.bread_intro{
+	width: 900px;
+	margin: 0 auto;
+	background: #a7b833;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+.bread1,.bread2,.bread3{
+	width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding: 30px;
+}
+.bread_wrap .bread_intro h3{
+	font-size: 2.5em;
+	color:#303030;
+	padding-top: 10px;
+}
+.bread_wrap .bread_intro p{
+	font-size: 18px;
+	color:#303030;
+}
+.bread_wrap .bread1 .menu_click02{
+	position: absolute;
+	top: 110px;
+	right: 108px;
+	font-size: 18px;
+	text-align: left;
+}
+.bread_wrap .bread2 .menu_click02{
+	position: absolute;
+	top: 130px;
+	right: 285px;
+	font-size: 18px;
+	text-align: left;
+}
+.bread_wrap .bread3 .menu_click02{
+	position: absolute;
+	top: 130px;
+	right: 223px;
+	font-size: 18px;
+	text-align: left;
+}
+.bread_wrap .bread1 .menu_intro02{
+	font-size: 12px;
+	color:#676767;
+	position: absolute;
+	top: 150px;
+	right: 111px;
+	text-align: left;
+}
+.bread_wrap .bread2 .menu_intro02{
+	font-size: 12px;
+	color:#676767;
+	position: absolute;
+	top: 170px;
+	right: 0px;
+	text-align: left;
+}
+.bread_wrap .bread3 .menu_intro02{
+	font-size: 12px;
+	color:#676767;
+	position: absolute;
+	top: 170px;
+	right: 3px;
+	text-align: left;
+}
+.bread_wrap img{
+	width: 320px;
+	overflow: hidden;
+}
+.bread_wrap img:hover{
+	transform: translate(0%,0%) rotate(360deg);
+	transition: 1s;
+	overflow: hidden;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*tandoori*/
