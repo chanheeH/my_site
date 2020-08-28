@@ -586,6 +586,7 @@ nav.menu .menu_scroll li.active{
 	position: relative;
 	padding: 30px;
 }
+.bread3{border-bottom: 0 none}
 .bread_wrap .bread_intro h3{
 	font-size: 2.5em;
 	color:#303030;
@@ -601,6 +602,7 @@ nav.menu .menu_scroll li.active{
 	right: 108px;
 	font-size: 18px;
 	text-align: left;
+	color:#a7b833;
 }
 .bread_wrap .bread2 .menu_click02{
 	position: absolute;
@@ -608,6 +610,7 @@ nav.menu .menu_scroll li.active{
 	right: 285px;
 	font-size: 18px;
 	text-align: left;
+	color:#a7b833;
 }
 .bread_wrap .bread3 .menu_click02{
 	position: absolute;
@@ -615,6 +618,7 @@ nav.menu .menu_scroll li.active{
 	right: 223px;
 	font-size: 18px;
 	text-align: left;
+	color:#a7b833;
 }
 .bread_wrap .bread1 .menu_intro02{
 	font-size: 12px;
@@ -655,3 +659,98 @@ nav.menu .menu_scroll li.active{
 
 
 /*tandoori*/
+.tandoori_wrap{}
+.tandoori_intro{
+	width: 900px;
+	margin: 0 auto;
+	background: #952e0a;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+.tandoori_intro h3{
+	font-size: 2.5em;
+	color:#e9e9e9;
+	padding-top: 10px;
+}
+.tandoori_intro p{
+	font-size: 18px;
+	color:#e9e9e9;
+}
+.tandoori1,
+.tandoori2,
+.tandoori3,
+.tandoori4{
+	width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding: 30px;
+}
+.tandoori4{border-bottom: 0 none}
+#tandooriFire{
+	width: 840px;
+	height: 450px;
+	object-fit: cover;
+}
+.tandoori_wrap img{
+	width: 450px;
+}
+.tandoori_wrap .tandoori2 .menu_click03{
+	position: absolute;
+	top: 100px;
+	right: 238px;
+	font-size: 18px;
+	color:#952e0a;
+}
+.tandoori_wrap .tandoori3 .menu_click03{
+	position: absolute;
+	top: 100px;
+	right: 156px;
+	font-size: 18px;
+	color:#952e0a;
+}
+.tandoori_wrap .tandoori4 .menu_click03{
+	position: absolute;
+	top: 100px;
+	right: 169px;
+	font-size: 18px;
+	color:#952e0a;
+}
+.tandoori_wrap .tandoori2 .menu_intro03{
+	position: absolute;
+	top: 150px;
+	right: 207px;
+	color:#676767;
+	font-size: 12px;
+}
+.tandoori_wrap .tandoori3 .menu_intro03{
+	position: absolute;
+	top: 150px;
+	right:108px;
+	color:#676767;
+	font-size: 12px;
+}
+.tandoori_wrap .tandoori4 .menu_intro03{
+	position: absolute;
+	top: 150px;
+	right: 214px;
+	color:#676767;
+	font-size: 12px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*lassi*/
+
+.lassi_wrap{}
+.lassi_intro{
+	width: 900px;
+	margin: 0 auto;
+	background: #952e0a;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
