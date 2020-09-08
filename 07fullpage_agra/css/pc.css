@@ -792,12 +792,13 @@ nav.menu .menu_scroll li.active{
 	left: 0;
 	border-right: 1px solid #ddd;
 }
-.lassi1 .menu_click04{
+.menu_click04{
 	font-size: 18px;
 	color:#f7e075;
 	text-align: center;
+	margin-bottom: 10px;
 }
-.lassi1 .menu_intro04{
+.menu_intro04{
 	color:#676767;
 	font-size: 12px;
 	text-align: center;
@@ -810,16 +811,6 @@ nav.menu .menu_scroll li.active{
 	top: 172px;
 	right: 0;
 }
-.lassi2 .menu_click04{
-	font-size: 18px;
-	color:#f7e075;
-	text-align: center;
-}
-.lassi2 .menu_intro04{
-	color:#676767;
-	font-size: 12px;
-	text-align: center;
-}
 .lassi2 img{
 	margin-left: 50px;
 	margin-bottom: 30px;
@@ -830,16 +821,6 @@ nav.menu .menu_scroll li.active{
 	left: 0;
 	border-right: 1px solid #ddd;
 }
-.lassi3 .menu_click04{
-	font-size: 18px;
-	color:#f7e075;
-	text-align: center;
-}
-.lassi3 .menu_intro04{
-	color:#676767;
-	font-size: 12px;
-	text-align: center;
-}
 .lassi3 img{
 	margin-left: 60px;
 	margin-bottom: 30px;
@@ -847,16 +828,6 @@ nav.menu .menu_scroll li.active{
 .lassi4{
 	top: 605px;
 	right: 0;
-}
-.lassi4 .menu_click04{
-	font-size: 18px;
-	color:#f7e075;
-	text-align: center;
-}
-.lassi4 .menu_intro04{
-	color:#676767;
-	font-size: 12px;
-	text-align: center;
 }
 .lassi4 img{
 	margin-left: 65px;
@@ -876,6 +847,61 @@ nav.menu .menu_scroll li.active{
 
 
 /*set*/
+.set_wrap{
+	width: 900px;
+	margin: 0 auto;
+}
+.set_intro{
+	width: 900px;
+	height: 137px;
+	margin: 0 auto;
+	background: #745237;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+.set_intro h3{
+	font-size: 2.5em;
+	color:#e9e9e9;
+	padding-top: 10px;
+}
+.set_intro p{
+	font-size: 18px;
+	color:#e9e9e9;
+}
+.set1,
+.set2,
+.set3,
+.set4,
+.set5{
+	width: 900px;
+	height: 350px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
 .set_wrap img{
 	width: 350px;
+	position: absolute;
+	top: 35px;
+}
+.menu_click05{
+	position: absolute;
+	top: 70px;
+	left: 470px;
+	font-size: 18px;
+	color:#745237;
+	text-align: left;
+}
+.menu_intro05{
+	position: absolute;
+	top: 130px;
+	left: 472px;
+	color:#676767;
+	font-size: 12px;
+	text-align: left;
+}
+.menu_intro05 li{
+	width: 200px;
+	float: left;
+	margin-bottom: 20px;
 }
