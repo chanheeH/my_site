@@ -202,3 +202,68 @@ nav.menuWrap .menu li.active{
 	transition: 0.8s;
 	z-index: 2
 }
+
+
+/*SECTION THIRD*/
+
+.slide{
+	position: relative;
+}
+.view{
+	position: absolute;
+	width: 70%;
+	left:50%;top:50%;transform: translate(-50%,-50%);
+	padding: 10px;
+	border-radius: 10px
+}
+.program li{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 15px;
+	color:white;
+	text-shadow: 1px 1px 5px #000;
+	font-family: 'Gamja Flower', cursive;
+}
+.slide .view .program li:nth-child(2){
+	width: 100%;
+	padding: 25px;
+	margin-bottom: 0;
+	text-align-last: left;
+	color:#fff;
+	text-shadow: none;
+	border: 1px solid #aaa;
+	height: 300px;
+	border-radius: 10px;
+}
+.slide .view .program li img{
+	width: 100%;
+	padding-top: 10px;
+}
+.slide .view .program li h2{
+	font-size: 1.5em;
+	margin-bottom: 30px;
+}
+.slide .view .program li p{
+	font-size: 16px;
+	margin-bottom: 50px;
+	color:#eee;
+}
+.slide .view .program li h6{
+	font-size: 14px;
+}
+.slide .view .program li a{
+	display: none;
+}
+/*background*/
+.bg_view1{background: #1048a6;}
+.bg_view2{background: #153f85;}
+.bg_view3{background: #18549b;}
+.bg_view4{background: #04447a;}
+.bg_view5{background: #1a4ca6;}
+.bg_view6{background: #473776;}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+/*SECTION FOURTH*/
