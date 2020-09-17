@@ -27,8 +27,29 @@
 					console.log(anchorslink+", "+index);
 					if(index == 2){
 						$(".imgOne,.imgTwo,.imgThree").addClass("move");
+						$(".bigAbout").addClass("down");
 					}else{
 						$(".imgOne,.imgTwo,.imgThree").removeClass("move");
+						$(".bigAbout").removeClass("down");
+					}
+
+					if(index == 3){
+						$(".bigProgram").addClass("down");
+					}else{
+						$(".bigProgram").removeClass("down");
+					}
+
+					if(index == 4){
+						$(".ticket_one,.ticket_two").addClass("up");
+						$(".bigTicket").addClass("down");
+					}else{
+						$(".ticket_one,.ticket_two").removeClass("up");
+						$(".bigTicket").removeClass("down");
+					}
+					if(index == 5){
+						$(".bigContact").addClass("down");
+					}else{
+						$(".bigContact").removeClass("down");
 					}
 				}
 			});
@@ -101,7 +122,11 @@
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
+<!-- -------------------------------------------------------------------------------------------------------- -->		
 		<div class="section" id="second" data-anchor="a2st">
+			<div class="bigAbout">
+				<h1>ABOUT US</h1>
+			</div>
 			<ul class="about_us clearfix">
 				<li>
 					<h4>바다를 닮은 넓은 수조</h4>
@@ -118,14 +143,17 @@
 					<p>아쿠아리움에서 제공하는 다양한<br>체험 프로그램을 즐길 수 있습니다.</p>
 				<img src="images/experience.jpg" alt="" class="imgThree">
 				</li>
-				
 			</ul>
 			<div class="background_opacity">background opacity</div>
 			<div class="scroll">
 				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
+<!-- -------------------------------------------------------------------------------------------------------- -->		
 		<div class="section" id="third" data-anchor="a3st">
+			<div class="bigProgram">
+				<h1>PROGRAM</h1>
+			</div>
 			<div class="slide">
 				<div class="view bg_view1">
 					<ul class="program clearfix">
@@ -226,15 +254,44 @@
 			</div> <!-- slide -->								
 			<div class="background_opacity">background opacity</div>
 			<div class="scroll">
-				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
-		<div class="section" id="fourth" data-anchor="a4st">	
+<!-- -------------------------------------------------------------------------------------------------------- -->
+		<div class="section" id="fourth" data-anchor="a4st">
+			<div class="bigTicket">
+				<h1>TICKET</h1>
+			</div>
+			<div class="ticketWrap">
+				<ul class="ticket">
+					<li class="ticket_one">
+						<h3>운영시간</h3>
+						<p>09:30 ~ 20:00 연중무휴</p>
+						<p style="margin-bottom: 90px;">※19:00은 매표 마감시간이며<br>19:30은 입장 마감시간입니다.</p>
+						<a href="#">자세히 보기</a>
+					</li>
+					<li class="ticket_two">
+						<h3>이용요금</h3>
+						<p>성인 : 35,000원</p>
+						<p>청소년 · 경로 : 32,000원</p>
+						<p style="margin-bottom: 72px;">어린이( 만 7세 ~ ) : 29,000원</p>
+						<a href="">티켓 구매하기</a>
+					</li>
+				</ul>
+			</div>
 			<div class="scroll">
-				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
+			<div class="background_opacity">background opacity</div>
 		</div>
+<!-- -------------------------------------------------------------------------------------------------------- -->
 		<div class="section" id="fifth" data-anchor="a5st">	
+			<video id="video_content"  loop muted data-autoplay>
+				<source src="images/video_content.mp4" type="video/mp4">
+			</video>
+			<div class="bigContact">
+				<h1>CONTACT</h1>
+			</div>
 			<div class="scroll">
 				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
