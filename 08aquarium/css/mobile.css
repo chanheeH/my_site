@@ -193,15 +193,15 @@ nav.menuWrap .menu li a:hover:after{
 	font-family: 'Gamja Flower', cursive;
 }
 .about_us li:first-child{
-	top:-200px;
+	top:-150px;
 	left: 2%;
 }
 .about_us li:nth-child(2){
-	top: 0;
+	top: -30px;
 	right: 2%;
 }
 .about_us li:nth-child(3){
-	top: 200px;
+	top: 80px;
 	left: 2%;
 }
 .about_us li h4{
@@ -224,8 +224,8 @@ nav.menuWrap .menu li a:hover:after{
 .imgTwo.move{top: 0;left:-67%;opacity:1;}
 .imgThree{top: 0;right:-97%;transition:1.5s;opacity:0;}
 .imgThree.move{top: 0;right:-67%;opacity:1;}
-.bigAbout{top:-400px;transition:1s;opacity:0}
-.bigAbout.down{top:-300px;opacity:1}
+.bigAbout{top:-310px;transition:1s;opacity:0}
+.bigAbout.down{top:-210px;opacity:1}
 
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -300,8 +300,8 @@ nav.menuWrap .menu li a:hover:after{
 	color:#1048a6;
 	font-weight: bold;
 }
-.bigProgram{top:-0px;transition:1s;opacity:0}
-.bigProgram.down{top:100px;opacity:1}
+.bigProgram{top:-190px;transition:1s;opacity:0}
+.bigProgram.down{top:90px;opacity:1}
 
 /*background*/
 .bg_view1{background: #1048a6;}
@@ -384,8 +384,8 @@ nav.menuWrap .menu li a:hover:after{
 .ticket_one.up{bottom:0px;opacity:1;}
 .ticket_two{bottom:-100px;transition:1.5s;opacity:0;}
 .ticket_two.up{bottom:0px;opacity:1;}
-.bigTicket{top:-230px;transition:1s;opacity:0}
-.bigTicket.down{top:-130px;opacity:1}
+.bigTicket{top:-130px;transition:1s;opacity:0}
+.bigTicket.down{top:-30px;opacity:1}
 
 
 /*--------------------------------------------------------------------------------------------------------*/
