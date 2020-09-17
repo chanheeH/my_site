@@ -142,7 +142,6 @@ nav.menuWrap .menu li.active{
 	position: absolute;
 	top: 0px;
 }
-
 .about_us{
 	width: 100%;
 	margin: 0 auto;
@@ -297,6 +296,7 @@ nav.menuWrap .menu li.active{
 	color:white;
 	position: relative;
 	bottom:-100px;
+	font-family: 'Gamja Flower', cursive;
 }
 .ticket li.ticket_two{
 	margin-right: 0;

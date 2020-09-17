@@ -166,6 +166,7 @@ nav.menuWrap .menu li a:hover:after{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 2em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 .background_opacity{
 	width: 100%;
@@ -241,6 +242,7 @@ nav.menuWrap .menu li a:hover:after{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 2em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 .slide{
 	position: relative;
@@ -325,6 +327,7 @@ nav.menuWrap .menu li a:hover:after{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 2em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 .ticketWrap{
 	width: 100%;
@@ -344,6 +347,7 @@ nav.menuWrap .menu li a:hover:after{
 	color:white;
 	position: relative;
 	bottom:-100px;
+	font-family: 'Gamja Flower', cursive;
 }
 .ticket li.ticket_two{
 	margin-right: 0;
@@ -410,6 +414,7 @@ nav.menuWrap .menu li a:hover:after{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 2em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 
 .bigContact{top:-380px;transition:1s;opacity:0}
