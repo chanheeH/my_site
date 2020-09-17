@@ -388,3 +388,25 @@ nav.menuWrap .menu li a:hover:after{
 
 
 /*SECTION FIFTH*/
+#video_content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	z-index: -100;
+}
+.bigContact{
+	position: relative;
+	width: 100%;
+	z-index: 999;
+}
+.bigContact h1{
+	color:white;
+	text-shadow: 1px 1px 5px #000;
+	font-size: 2em;
+	text-align: center;
+}
+
+.bigContact{top:-380px;transition:1s;opacity:0}
+.bigContact.down{top:-280px;opacity:1}
