@@ -280,18 +280,19 @@ nav.menuWrap .menu li.active{
 	display: none;
 }
 .ticketWrap{
-	width: 640px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	z-index: 999;
+	padding:0 10px;
 }
 .ticket{}
 .ticket li{
-	width: 300px;
+	width: 48%;
 	float: left;
 	background-color: #153f85;
 	padding: 25px;
-	margin-right: 40px;
+	margin-right: 4%;
 	border-radius: 5px;
 	color:white;
 	position: relative;

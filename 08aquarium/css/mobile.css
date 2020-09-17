@@ -291,6 +291,9 @@ nav.menuWrap .menu li a:hover:after{
 	border: 1px solid #eee;
 	color:white;
 	border-radius: 10px;
+	position: absolute;
+	left: 20px;
+	bottom: 25px;
 }
 .slide .view .program li a:hover{
 	background-color: #fff;
@@ -324,18 +327,19 @@ nav.menuWrap .menu li a:hover:after{
 	text-align: center;
 }
 .ticketWrap{
-	width: 460px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	z-index: 999;
+	padding:0 10px;
 }
 .ticket{}
 .ticket li{
-	width: 220px;
+	width: 48%;
 	float: left;
 	background-color: #153f85;
 	padding: 25px;
-	margin-right: 20px;
+	margin-right: 4%;
 	border-radius: 5px;
 	color:white;
 	position: relative;
