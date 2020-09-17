@@ -216,6 +216,7 @@ nav.menuWrap .menu li.active{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 4em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 .slide{
 	position: relative;
@@ -292,6 +293,7 @@ nav.menuWrap .menu li.active{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 4em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 .ticketWrap{
 	width: 830px;
@@ -310,6 +312,7 @@ nav.menuWrap .menu li.active{
 	color:white;
 	position: relative;
 	bottom:-100px;
+	font-family: 'Gamja Flower', cursive;
 }
 .ticket li.ticket_two{
 	margin-right: 0;
@@ -376,6 +379,7 @@ nav.menuWrap .menu li.active{
 	text-shadow: 1px 1px 5px #000;
 	font-size: 4em;
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
 }
 
 .bigContact{top:-320px;transition:1s;opacity:0}
