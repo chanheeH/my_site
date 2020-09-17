@@ -417,5 +417,5 @@ nav.menuWrap .menu li a:hover:after{
 	font-family: 'Gamja Flower', cursive;
 }
 
-.bigContact{top:-380px;transition:1s;opacity:0}
-.bigContact.down{top:-280px;opacity:1}
+.bigContact{top:-310px;transition:1s;opacity:0}
+.bigContact.down{top:-210px;opacity:1}
