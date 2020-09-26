@@ -51,7 +51,7 @@ header img{
 .color_opacity{
 	width: 100%;
 	height: 100%;
-	background-color: #303030;
+	background-color: #09092d;
 	opacity: 0.5;
 	text-indent: -9999px;
 	transition: 0.5s;
@@ -89,7 +89,7 @@ nav.menuWrap .menu li a:after{
 	display:block;
 	width:0;
 	height: 2px;
-	background:skyblue;
+	background:#8fb4f2;
 	transition:0.3s;
 	margin:0 auto
 }
@@ -179,16 +179,6 @@ nav.menuWrap .menu li.active{
 	border-radius: 5px;
 	position: absolute;
 	transform: translateX(-50%);
-	bottom:-20px;
-}
-.about_us img.imgOne{
-	top: 220px;
-}
-.about_us img.imgTwo{
-	top: 220px;
-}
-.about_us img.imgThree{
-	top: 220px;
 }
 .about_us img.imgOne:hover{
 	transform: translate(80%,40%) scale(2.3);
@@ -206,6 +196,13 @@ nav.menuWrap .menu li.active{
 	z-index: 2
 }
 
+
+.imgOne{bottom:-250px;transition:0.5s;opacity:0;}
+.imgOne.move{bottom:-150px;opacity:1;}
+.imgTwo{bottom:-250px;transition:1s;opacity:0;}
+.imgTwo.move{bottom:-150px;opacity:1;}
+.imgThree{bottom:-250px;transition:1.5s;opacity:0;}
+.imgThree.move{bottom:-150px;opacity:1;}
 
 /*--------------------------------------------------------------------------------------------------------*/
 
@@ -354,3 +351,78 @@ nav.menuWrap .menu li.active{
 .bigContact{
 	display: none;
 }
+.contactWrap{
+	width: 100%;
+	margin: 0 auto;
+}
+.contactWrap .contact{}
+.contactWrap .contact li{
+	width: 31.33%;
+	float: left;
+	text-align: center;
+	border: 1px solid #eee;
+	margin-right: 3%;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 2%;
+	font-family: 'Gamja Flower', cursive;
+	height: 225px;
+}
+.contactWrap .contact a{
+	color:white;
+}
+.contactWrap .contact li:nth-child(3),
+.contactWrap .contact li:nth-child(6){
+	margin-right: 0%;
+}
+.contactWrap .contact li:nth-child(4),
+.contactWrap .contact li:nth-child(5),
+.contactWrap .contact li:nth-child(6){
+	margin-bottom: 0;
+}
+.contactWrap .bg_opacity{
+	text-indent: -9999px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #2b2f3e;
+	opacity: 0.6;
+}
+.contactWrap .contact li h3{
+	font-size: 20px;
+	margin-bottom: 70px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	z-index: 10;
+}
+.contactWrap .contact i{
+	position: relative;
+	z-index: 10;
+	font-size: 40px;
+}
+.contactWrap li:hover .bg_opacity{
+	opacity: 1;
+	transition: 0.3s;
+	background-color: #4bb4fe;
+}
+
+.contact_one{bottom:-120px;transition:1s;opacity:0;}
+.contact_one.up{bottom:0px;opacity:1;}
+.contact_two{bottom:-120px;transition:1.5s;opacity:0;}
+.contact_two.up{bottom:0px;opacity:1;}
+.contact_three{bottom:-120px;transition:2s;opacity:0;}
+.contact_three.up{bottom:0px;opacity:1;}
+.contact_four{bottom:-120px;transition:2.5s;opacity:0;}
+.contact_four.up{bottom:0px;opacity:1;}
+.contact_five{bottom:-120px;transition:3s;opacity:0;}
+.contact_five.up{bottom:0px;opacity:1;}
+.contact_six{bottom:-120px;transition:3.5s;opacity:0;}
+.contact_six.up{bottom:0px;opacity:1;}
+
+
+
+.bigContact{top:-120px;transition:1s;opacity:0}
+.bigContact.down{top:-20px;opacity:1}

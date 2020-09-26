@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
@@ -47,8 +48,10 @@
 						$(".bigTicket").removeClass("down");
 					}
 					if(index == 5){
+						$(".contact_one,.contact_two,.contact_three,.contact_four,.contact_five,.contact_six").addClass("up");
 						$(".bigContact").addClass("down");
 					}else{
+						$(".contact_one,.contact_two,.contact_three,.contact_four,.contact_five,.contact_six").removeClass("up");
 						$(".bigContact").removeClass("down");
 					}
 				}
@@ -121,7 +124,7 @@
 			<div class="scroll">
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
-		</div>
+		</div> <!-- section -->
 <!-- -------------------------------------------------------------------------------------------------------- -->		
 		<div class="section" id="second" data-anchor="a2st">
 			<div class="bigAbout">
@@ -148,7 +151,7 @@
 			<div class="scroll">
 				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
-		</div>
+		</div> <!-- section -->
 <!-- -------------------------------------------------------------------------------------------------------- -->		
 		<div class="section" id="third" data-anchor="a3st">
 			<div class="bigProgram">
@@ -256,7 +259,7 @@
 			<div class="scroll">
 				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
-		</div>
+		</div> <!-- section -->
 <!-- -------------------------------------------------------------------------------------------------------- -->
 		<div class="section" id="fourth" data-anchor="a4st">
 			<div class="bigTicket">
@@ -283,7 +286,7 @@
 				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 			<div class="background_opacity">background opacity</div>
-		</div>
+		</div> <!-- section -->
 <!-- -------------------------------------------------------------------------------------------------------- -->
 		<div class="section" id="fifth" data-anchor="a5st">	
 			<video id="video_content"  loop muted data-autoplay>
@@ -292,10 +295,55 @@
 			<div class="bigContact">
 				<h1>CONTACT</h1>
 			</div>
-			<div class="scroll">
-				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
-			</div>
-		</div>
-	</div>
+			<div class="contactWrap">
+				<ul class="contact clearfix">
+					<li class="contact_one">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>자주 묻는 질문</h3>
+							<i class="fas fa-question-circle fa-3x"></i>
+						</a>
+					</li>
+					<li class="contact_two">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>방문 전 이용문의</h3>
+							<i class="fas fa-walking fa-3x"></i>
+						</a>
+					</li>
+					<li class="contact_three">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>고객 소리함</h3>
+							<i class="fas fa-envelope-open-text fa-3x"></i>
+						</a>
+					</li>
+					<li class="contact_four">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>제휴 문의</h3>
+							<i class="fas fa-hands-helping fa-3x"></i>
+						</a>
+					</li>
+					<li class="contact_five">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>공지사항</h3>
+							<i class="fas fa-bullhorn fa-3x"></i>
+						</a>
+					</li>
+					<li class="contact_six">
+						<a href="#">
+							<div class="bg_opacity">bg_opacity</div>
+							<h3>공식 SNS</h3>
+							<i class="fab fa-facebook-square fa-3x"></i>
+							<i class="fab fa-instagram-square fa-3x"></i>
+							<i class="fab fa-youtube-square fa-3x"></i>
+						</a>
+					</li>
+				</ul> <!-- contact -->
+			</div> <!-- contactWrap -->
+		</div> <!-- section -->
+	</div> <!-- fullpage -->
 </body>
 </html>
