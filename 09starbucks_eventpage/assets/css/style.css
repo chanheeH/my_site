@@ -244,7 +244,7 @@ body {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #065e77;
+  color: #036635;
 }
 
 .mobile-nav-overly {
@@ -285,7 +285,7 @@ body {
 #coffee h2{
   font-size: 3em;
   margin-bottom: 50px;
-  padding-top: 30px;
+  padding-top: 50px;
   font-family: 'Courier Prime', monospace;
 }
 #coffee h4{
@@ -296,6 +296,7 @@ body {
 #coffee p{
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  padding: 10px;
 }
 #coffee img{
   width: 40%;
@@ -340,7 +341,7 @@ body {
 #bread h2{
   font-size: 3em;
   margin-bottom: 50px;
-  padding-top: 30px;
+  padding-top: 50px;
   font-family: 'Courier Prime', monospace;
 }
 #bread h4{
@@ -405,9 +406,9 @@ body {
   margin-top: 50px;
 }
 #tumbler h4{
-  font-size: 2em;
+  font-size: 2.5em;
   margin-top: 50px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Stylish', sans-serif;
 }
 @media (min-width: 768px) and (max-width: 990px){
   #tumbler img{
