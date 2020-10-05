@@ -118,7 +118,7 @@ nav.menuWrap .menu li.active{
 	left: 50%;
 	transform: translateX(-50%);
 	animation:Scroll 0.8s infinite alternate;
-	z-index: 1
+	z-index:9999
 }
 .scroll img{
 	width: 50px;
@@ -201,7 +201,7 @@ nav.menuWrap .menu li.active{
 .imgThree{bottom:-20px;transition:1.5s;opacity:0;}
 .imgThree.move{bottom:20px;opacity:1;}
 .bigAbout{top:-100px;transition:1s;opacity:0}
-.bigAbout.down{top:-30px;opacity:1}
+.bigAbout.down{top:0px;opacity:1}
 
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -269,8 +269,8 @@ nav.menuWrap .menu li.active{
 	display: none;
 }
 
-.bigProgram{top:-100px;transition:1s;opacity:0}
-.bigProgram.down{top:200px;opacity:1}
+.bigProgram{top:0px;transition:1s;opacity:0}
+.bigProgram.down{top:100px;opacity:1}
 
 /*background*/
 .bg_view1{background: #1048a6;}

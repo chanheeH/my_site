@@ -114,7 +114,7 @@ nav.menuWrap .menu li.active{
 	left: 50%;
 	transform: translateX(-50%);
 	animation:Scroll 0.8s infinite alternate;
-	z-index: 1
+	z-index: 9999
 }
 .scroll img{
 	width: 100%;
