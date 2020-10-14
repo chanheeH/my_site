@@ -489,3 +489,33 @@ nav.menuWrap .menu li a:hover:after{
 
 .bigContact{top:-210px;transition:1s;opacity:0}
 .bigContact.down{top:-110px;opacity:1}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+/*FOOTER*/
+.footer{
+	width: 100%;
+	position: relative;
+	background: #dae2f6;
+}
+.footer .footertxt{
+	width: 100%;
+	margin: 0 auto;
+}
+.footer .footertxt li{
+	width: 30%;
+	float: left;
+	margin: 30px 0px 30px 2%;
+	color:#152238;
+	font-size: 12px;
+}
+.footer .footertxt li:nth-child(2){
+	margin-top: 60px;
+	margin-left: 3%;
+	width: 65%;
+}
+.footer .footertxt .footerImg{
+	width: 100%;
+}
