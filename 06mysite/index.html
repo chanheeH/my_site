@@ -15,20 +15,25 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({});
+			$(".slider").bxSlider({
+				auto:true
+			});
 
 			$(".txtSlide").bxSlider({
 				pagerCustom:".pagerTwo",
-				controls:false
+				controls:false,
+				auto:true;
 			});
 
 			$(".imgSlide").bxSlider({
-				pager:false
+				pager:false,
+				auto:true;
 			});
 
 			$(".todaySlide").bxSlider({
 				pagerCustom:".pagerThree",
-				controls:false
+				controls:false,
+				auto:true;
 			});
 		 
 			$(".language>a").click(function(){
