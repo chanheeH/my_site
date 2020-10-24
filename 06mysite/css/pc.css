@@ -8,7 +8,12 @@ body{min-width: 1260px}
 	width: 1260px;height: 50px;position: absolute;_background-color:skyblue;
 	left:50%;transform:translateX(-50%);top:30px;z-index:1
 }
-#header_top h1{float: left;line-height:50px;padding-left:10px;}
+#header_top h1 img{
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: -20px;
+}
 #header_top h1 a{color:white;}
 #header_top #main_menu{
 	float: right;
@@ -686,10 +691,11 @@ body{min-width: 1260px}
 	margin: 0 auto;
 	position: relative;
 }
-.footer h1{
-	line-height:50px;
-	padding-top: 60px;
-	padding-left: 10px;
+.footer h1 img{
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: 60px;
 }
 .footer ul{
 	position: absolute;
