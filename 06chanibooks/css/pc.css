@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{min-width: 1260px}
+body{min-width: 1260px;font-family: 'Sunflower', sans-serif;}
 /*header*/
 #header{position: relative;}
 #header.main{height: 1950px;}
